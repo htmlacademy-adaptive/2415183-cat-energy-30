@@ -1,3 +1,25 @@
-.ttt {
-  color: #ff0000;
+.program {
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 20px;
+}
+
+.program__item{
+  margin-bottom: 20px;
+}
+.program__title{
+  font-family: "Oswald";
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.program__pro-link{
+  font-family: "Oswald";
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
 }
