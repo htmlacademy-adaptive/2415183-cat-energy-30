@@ -23,6 +23,7 @@
 .additional-products-list__item-info{
   display: flex;
   margin-bottom: 15px;
+  justify-content: center;
 }
 .additional-products-list__item-quantity,
 .additional-products-list__item-price{
@@ -32,4 +33,9 @@
 
 .additional-products-list__item-price{
   margin-left: auto;
+}
+
+.additional-products-list__button{
+  display: flex;
+  justify-content: center;
 }

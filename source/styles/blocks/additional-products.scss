@@ -4,3 +4,23 @@
   line-height: 24px;
   font-weight: 400;
 }
+
+.additional-products__advertising {
+  width: 280px;
+  height: 290px;
+  background-image: url("../../images/catalog/mobile-gift-background@1x.png");
+  background-size: 100% auto;
+  padding-top: 186px;
+  box-sizing: border-box;
+}
+
+.additional-products__advertising-text{
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 60px;
+  margin: 0;
+
+}
