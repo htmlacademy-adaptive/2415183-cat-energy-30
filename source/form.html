@@ -49,7 +49,7 @@
                 </a>
               </li>
               <li class="menu-nav__list-item">
-                <a class="menu-nav__list-link link button" href="form.html">
+                <a class="menu-nav__list-link link" href="form.html">
                   Подбор программы
                 </a>
               </li>
@@ -139,9 +139,8 @@
             </div>
             <div class="order-form__comment">
               <h2 class="order-form__title title">Комментарий</h2>
-              <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
-              <input class="order-form__comment-input input" name="комментарий" id="comment" type="text"
-              placeholder="Расскажите обо всех повадках кота" value="Расскажите обо всех повадках кота" size="500">
+              <p class="visually-hidden" for="comment">Расскажите обо всех повадках кота</p>
+              <textarea class="order-form__comment-textarea input" name="комментарий">Расскажите обо всех повадках кота</textarea>
             </div>
             <div class="order-form__extra">
               <h2 class="order-form__title title">Дополнительно</h2>
@@ -182,10 +181,12 @@
           <p class="order-form__annotation-text">* - Обязательные поля</p>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--darken">
         <div class="container">
-          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts__text-container">
+            <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
           <picture>
             <source media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" type="image/png" width="1440" height="400">
             <source media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" type="image/png" width="768" height="400">

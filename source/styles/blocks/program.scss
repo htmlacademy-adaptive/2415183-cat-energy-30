@@ -2,11 +2,13 @@
   color: #444444;
   font-size: 14px;
   line-height: 18px;
-  padding: 20px;
+  padding: 0;
 }
 
 .program__item{
   margin-bottom: 20px;
+  background-color: #F2F2F2;
+
 }
 .program__title{
   font-family: "Oswald";
@@ -15,6 +17,15 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  padding-top: 30px;
+  padding-left: 90px;
+  margin: 0;
+}
+.program__text{
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 38px;
+  padding: 0 33px 0 20px;
 }
 
 .program__pro-link,
@@ -24,4 +35,8 @@
   color: #000000;
   font-size: 16px;
   line-height: 16px;
+  margin: 0;
+  padding: 0 20px 18px;
+  box-sizing: border-box;
+  display: block;
 }
