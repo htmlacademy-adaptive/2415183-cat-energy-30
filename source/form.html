@@ -71,93 +71,105 @@
         <div class="container">
           <form class="program-selection-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="order-form__parameters">
-              <label class="order-form__label" for="cat-name">Имя:*</label>
-              <input class="order-form__input input" type="text" name="Имя кота" id="cat-name" placeholder="Укажите имя" value="Барсик">
-              <label class="order-form__label" for="cat-weight">Вес(кг):*</label>
-              <input class="order-form__input input" type="number" name="Вес кота" id="cat-weight" placeholder="Укажите вес" value="7">
-              <label class="order-form__label" for="cat-age">Возраст (лет):</label>
-              <input class="order-form__input input" type="number" name="Возраст кота" id="cat-age" placeholder="Укажите возраст" value="7">
+              <div class="order-form__parameters-item">
+                <label class="order-form__label" for="cat-name">Имя:*</label>
+                <input class="order-form__input input" type="text" name="Имя кота" id="cat-name" placeholder="Укажите имя" value="Барсик">
+              </div>
+              <div class="order-form__parameters-item">
+                <label class="order-form__label" for="cat-weight">Вес (кг):*</label>
+                <input class="order-form__input input" type="number" name="Вес кота" id="cat-weight" placeholder="Укажите вес" value="7">
+              </div>
+              <div class="order-form__parameters-item">
+                <label class="order-form__label" for="cat-age">Возраст (лет):</label>
+                <input class="order-form__input input" type="number" name="Возраст кота" id="cat-age" placeholder="Укажите возраст" value="7">
+              </div>
             </div>
             <div class="order-form__program-type">
               <ul class="order-form__program-type-list">
                 <li>
-                  <label class="order-form__label visually-hidden" for="weight-loss"><!--Похудение-->
+                  <label class="order-form__label" for="weight-loss"><!--Похудение-->
                     <input class="order-form__input input" type="radio" name="программа питания" id="weight-loss" value="Похудение" checked>
                     <span class="order-form__custom-radio"></span>
-                    <span class="order-form__label">Похудение</span>
+                    <span class="order-form__label-text">Похудение</span>
                   </label>
                 </li>
                 <li>
-                  <label class="order-form__label visually-hidden" for="weight-gain"><!--Набор массы-->
+                  <label class="order-form__label" for="weight-gain"><!--Набор массы-->
                     <input class="order-form__input" type="radio" name="программа питания" id="weight-gain" value="Набор массы">
                     <span class="order-form__custom-radio"></span>
-                    <span class="order-form__label">Набор массы</span>
+                    <span class="order-form__label-text">Набор массы</span>
                   </label>
                 </li>
                 <li>
-                  <label class="order-form__label visually-hidden" for="idk"><!--Не знаю (нужен ваш совет)-->
+                  <label class="order-form__label" for="idk"><!--Не знаю (нужен ваш совет)-->
                     <input class="order-form__input " type="radio" name="программа питания" id="idk" value="Не знаю (нужен ваш совет)">
                     <span class="order-form__custom-radio"></span>
-                    <span class="order-form__label">Не знаю (нужен ваш совет)</span>
+                    <span class="order-form__label-text">Не знаю (нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
             </div>
             <div class="order-form__owner-contacts">
               <h2 class="order-form__title title">Контактные данные (владельца кота)</h2>
-              <label for="owner-e-mail">e-mail:*</label>
-              <input
-                class="order-form__e-mail input"
-                name="e-mail"
-                id="owner-e-mail"
-                type="email"
-                placeholder="Ваш e-mail"
-                value="kuklachev@gmail.com"
-                required
-              />
-              <label for="owner-tel">Телефон:*</label>
-              <input
-                class="order-form__tel input"
-                name="телефон"
-                id="owner-tel"
-                type="tel"
-                placeholder="Ваш телефон"
-                required
-              />
+              <div class="order-form__owner-contacts-items">
+                <div class="order-form__owner-contacts-item">
+                  <label class="order-form__label" for="owner-e-mail">e-mail:*</label>
+                  <input
+                    class="order-form__e-mail input"
+                    name="e-mail"
+                    id="owner-e-mail"
+                    type="email"
+                    placeholder="Ваш e-mail"
+                    value="kuklachev@gmail.com"
+                    required
+                  />
+                </div>
+                <div class="order-form__owner-contacts-item">
+                  <label class="order-form__label" for="owner-tel">Телефон:*</label>
+                  <input
+                    class="order-form__tel input"
+                    name="телефон"
+                    id="owner-tel"
+                    type="tel"
+                    placeholder="Ваш телефон"
+                    required
+                  />
+                </div>
+              </div>
             </div>
             <div class="order-form__comment">
               <h2 class="order-form__title title">Комментарий</h2>
               <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
               <input class="order-form__comment-input input" name="комментарий" id="comment" type="text"
-              placeholder="Расскажите обо всех повадках кота" value="Расскажите обо всех повадках кота" size="50">
+              placeholder="Расскажите обо всех повадках кота" value="Расскажите обо всех повадках кота" size="500">
             </div>
             <div class="order-form__extra">
-              <h2 class="order-form__extra-title title">Дополнительно</h2>
+              <h2 class="order-form__title title">Дополнительно</h2>
               <ul class="order-form__extra-list">
                 <li>
-                  <label class="order-form__label visually-hidden" for="sugar-substitude"><!--Сахарозаменитель-->
-                    <input class="control-input visually-hidden" type="checkbox" name="Сахарозаменитель" id="sugar-substitude" checked>
+                  <label class="order-form__label" for="sugar-substitude"><!--Сахарозаменитель-->
+                    <input class="control-input" type="checkbox" name="Сахарозаменитель" id="sugar-substitude" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Сахарозаменитель</span>
                   </label>
                 </li>
                 <li>
-                  <label class="order-form__label visually-hidden" for="water"><!--Питьевая вода-->
-                    <input class="control-input visually-hidden" type="checkbox" name="Питьевая вода" id="water" >
+                  <label class="order-form__label" for="water"><!--Питьевая вода-->
+                    <input class="control-input" type="checkbox" name="Питьевая вода" id="water" >
                     <span class="control-mark"></span>
                     <span class="control-label">Питьевая вода</span>
                   </label>
                 </li>
                 <li>
-                  <label class="order-form__label visually-hidden" for="milk"><!--Молоко-->
-                    <input class="control-input visually-hidden" type="checkbox" name="Молоко" id="milk">
+                  <label class="order-form__label" for="milk"><!--Молоко-->
+                    <input class="control-input" type="checkbox" name="Молоко" id="milk">
                     <span class="control-mark"></span>
                     <span class="control-label">Молоко</span>
                   </label>
                 </li>
                 <li>
-                  <label class="order-form__label visually-hidden" for="vitamins"><!--Витамины-->
-                    <input class="control-input visually-hidden" type="checkbox" name="Витамины" id="vitamins">
+                  <label class="order-form__label" for="vitamins"><!--Витамины-->
+                    <input class="control-input" type="checkbox" name="Витамины" id="vitamins">
                     <span class="control-mark"></span>
                     <span class="control-label">Витамины</span>
                   </label>

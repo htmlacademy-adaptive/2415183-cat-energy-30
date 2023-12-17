@@ -1,3 +1,12 @@
-.ttt {
-  color: #ff0000;
+.button {
+  background-color: $green-basic;
+  color: #ffffff;
+  padding: 10px 44px;
+  margin: 0;
+  width: 100%;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
 }
