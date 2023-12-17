@@ -1,7 +1,46 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/visually-hiden.scss";
 
 /* BLOCKS */
+// common & index.html
 @import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/container.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/link.scss";
+@import "./blocks/menu-nav.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/hero-wrapper.scss";
+@import "./blocks/title.scss";
+@import "./blocks/program.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+
+// form.html
+@import "./blocks/hero-form.scss";
+@import "./blocks/order-form.scss";
+@import "./blocks/program-selection-form.scss";
+@import "./blocks/input.scss";
+@import "./blocks/control-input.scss";
+@import "./blocks/control-mark.scss";
+@import "./blocks/control-label.scss";
+
+// catalog.html
+@import "./blocks/hero-catalog.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/product-specs.scss";
+@import "./blocks/card.scss";
+@import "./blocks/show-more.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/additional-products-list.scss";
+@import "./blocks/advertising-text.scss";

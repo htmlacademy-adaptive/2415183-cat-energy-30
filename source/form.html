@@ -7,40 +7,51 @@
     <link rel="icon" href="favicons/192.png" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>CAT ENERGY</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="header">
       <div class="container">
-        <div class="main-header__logo logo">
-          <a class="logo__link link" href="index.html">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59" >
-              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
-              <img class="logo__image-icon" src="images/logo-mobile.svg " width="33" height="38" alt="Cat energy">
-            </picture>
-          </a>
-          <a class="logo__link link" href="index.html">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" type="image/svg+xml" width="118" height="21" >
-              <source media="(min-width: 768px)" srcset="images/logo-text-mobile-tablet.svg" type="image/svg+xml" width="101" height="18">
-              <img class="logo__text " src="images/logo-text-mobile-tablet.svg" width="101"  height="18" alt="Cat energy">
-            </picture>
-          </a>
-        </div>
+        <div class="header__wrapper">
+          <div class="header__logo logo">
+            <a class="logo__link link" href="index.html">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59" >
+                <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+                <img class="logo__image-icon" src="images/logo-mobile.svg" width="33" height="38" alt="Cat energy">
+              </picture>
+            </a>
+            <a class="logo__link link" href="index.html">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" type="image/svg+xml" width="118" height="21" >
+                <source media="(min-width: 768px)" srcset="images/logo-text-mobile-tablet.svg" type="image/svg+xml" width="101" height="18">
+                <img class="logo__text " src="images/logo-text-mobile-tablet.svg" width="101" height="18" alt="Cat energy">
+              </picture>
+            </a>
+          </div>
           <nav class="menu-nav">
-            <button class="menu-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню.</span>
+          <button class="menu-nav__toggle-open" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+            <button class="menu-nav__toggle-close" type="button">
+              <span class="visually-hidden">Закрыть меню.</span>
             </button>
             <ul class="menu-nav__list">
               <li class="menu-nav__list-item">
-                <a class="menu-nav__list-link link" href="index.html">Главная</a>
+                <a class="menu-nav__list-link link" href="index.html">
+                  Главная
+                </a>
               </li>
               <li class="menu-nav__list-item">
-                <a class="menu-nav__list-link link" href="catalog.html">Каталог продукции</a>
+                <a class="menu-nav__list-link link menu-nav__list-link--current" href="catalog.html">
+                  Каталог продукции
+                </a>
               </li>
               <li class="menu-nav__list-item">
-                <a class="menu-nav__list-link link menu-nav__list-link--current" href="form.html">Подбор программы</a>
+                <a class="menu-nav__list-link link" href="form.html">
+                  Подбор программы
+                </a>
               </li>
             </ul>
           </nav>
@@ -48,11 +59,11 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero-form">
         <div class="container">
-          <div class="hero-wrapper">
-            <h1 class="hero__title title">Подбор программы</h1>
-            <p class="hero__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <div class="hero-form-wrapper">
+            <h1 class="hero-form__title title">Подбор программы</h1>
+            <p class="hero-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           </div>
         </div>
       </section>
@@ -60,93 +71,104 @@
         <div class="container">
           <form class="program-selection-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="order-form__parameters">
-              <label class="order-form__label" for="cat-name">Имя:*</label>
-              <input class="order-form__input input" type="text" name="Имя кота" id="cat-name" placeholder="Укажите имя" value="Барсик">
-              <label class="order-form__label" for="cat-weight">Вес(кг):*</label>
-              <input class="order-form__input input" type="number" name="Вес кота" id="cat-weight" placeholder="Укажите вес" value="7">
-              <label class="order-form__label" for="cat-age">Возраст (лет):</label>
-              <input class="order-form__input input" type="number" name="Возраст кота" id="cat-age" placeholder="Укажите возраст" value="7">
+              <div class="order-form__parameters-item">
+                <label class="order-form__label" for="cat-name">Имя:*</label>
+                <input class="order-form__input input" type="text" name="Имя кота" id="cat-name" placeholder="Укажите имя" value="Барсик">
+              </div>
+              <div class="order-form__parameters-item">
+                <label class="order-form__label" for="cat-weight">Вес (кг):*</label>
+                <input class="order-form__input input" type="number" name="Вес кота" id="cat-weight" placeholder="Укажите вес" value="7">
+              </div>
+              <div class="order-form__parameters-item">
+                <label class="order-form__label" for="cat-age">Возраст (лет):</label>
+                <input class="order-form__input input" type="number" name="Возраст кота" id="cat-age" placeholder="Укажите возраст" value="7">
+              </div>
             </div>
             <div class="order-form__program-type">
               <ul class="order-form__program-type-list">
                 <li>
-                  <label class="order-form__label visually-hidden" for="weight-loss"><!--Похудение-->
+                  <label class="order-form__label" for="weight-loss"><!--Похудение-->
                     <input class="order-form__input input" type="radio" name="программа питания" id="weight-loss" value="Похудение" checked>
                     <span class="order-form__custom-radio"></span>
-                    <span class="order-form__label">Похудение</span>
+                    <span class="order-form__label-text">Похудение</span>
                   </label>
                 </li>
                 <li>
-                  <label class="order-form__label visually-hidden" for="weight-gain"><!--Набор массы-->
+                  <label class="order-form__label" for="weight-gain"><!--Набор массы-->
                     <input class="order-form__input" type="radio" name="программа питания" id="weight-gain" value="Набор массы">
                     <span class="order-form__custom-radio"></span>
-                    <span class="order-form__label">Набор массы</span>
+                    <span class="order-form__label-text">Набор массы</span>
                   </label>
                 </li>
                 <li>
-                  <label class="order-form__label visually-hidden" for="idk"><!--Не знаю (нужен ваш совет)-->
+                  <label class="order-form__label" for="idk"><!--Не знаю (нужен ваш совет)-->
                     <input class="order-form__input " type="radio" name="программа питания" id="idk" value="Не знаю (нужен ваш совет)">
                     <span class="order-form__custom-radio"></span>
-                    <span class="order-form__label">Не знаю (нужен ваш совет)</span>
+                    <span class="order-form__label-text">Не знаю (нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
             </div>
             <div class="order-form__owner-contacts">
               <h2 class="order-form__title title">Контактные данные (владельца кота)</h2>
-              <label for="owner-e-mail">e-mail:*</label>
-              <input
-                class="order-form__e-mail input"
-                name="e-mail"
-                id="owner-e-mail"
-                type="email"
-                placeholder="Ваш e-mail"
-                value="kuklachev@gmail.com"
-                required
-              />
-              <label for="owner-tel">Телефон:*</label>
-              <input
-                class="order-form__tel input"
-                name="телефон"
-                id="owner-tel"
-                type="tel"
-                placeholder="Ваш телефон"
-                required
-              />
+              <div class="order-form__owner-contacts-items">
+                <div class="order-form__owner-contacts-item">
+                  <label class="order-form__label" for="owner-e-mail">e-mail:*</label>
+                  <input
+                    class="order-form__e-mail input"
+                    name="e-mail"
+                    id="owner-e-mail"
+                    type="email"
+                    placeholder="Ваш e-mail"
+                    value="kuklachev@gmail.com"
+                    required
+                  />
+                </div>
+                <div class="order-form__owner-contacts-item">
+                  <label class="order-form__label" for="owner-tel">Телефон:*</label>
+                  <input
+                    class="order-form__tel input"
+                    name="телефон"
+                    id="owner-tel"
+                    type="tel"
+                    placeholder="Ваш телефон"
+                    required
+                  />
+                </div>
+              </div>
             </div>
             <div class="order-form__comment">
               <h2 class="order-form__title title">Комментарий</h2>
-              <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
-              <input class="order-form__comment-input input" name="комментарий" id="comment" type="text"
-              placeholder="Расскажите обо всех повадках кота" value="Расскажите обо всех повадках кота" size="50">
+              <p class="visually-hidden">Расскажите обо всех повадках кота</p>
+              <textarea class="order-form__comment-textarea input" name="комментарий">Расскажите обо всех повадках кота</textarea>
             </div>
             <div class="order-form__extra">
-              <h2 class="order-form__extra-title title">Дополнительно</h2>
+              <h2 class="order-form__title title">Дополнительно</h2>
               <ul class="order-form__extra-list">
                 <li>
-                  <label class="order-form__label visually-hidden" for="sugar-substitude"><!--Сахарозаменитель-->
-                    <input class="control-input visually-hidden" type="checkbox" name="Сахарозаменитель" id="sugar-substitude" checked>
+                  <label class="order-form__label" for="sugar-substitude"><!--Сахарозаменитель-->
+                    <input class="control-input" type="checkbox" name="Сахарозаменитель" id="sugar-substitude" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Сахарозаменитель</span>
                   </label>
                 </li>
                 <li>
-                  <label class="order-form__label visually-hidden" for="water"><!--Питьевая вода-->
-                    <input class="control-input visually-hidden" type="checkbox" name="Питьевая вода" id="water" >
+                  <label class="order-form__label" for="water"><!--Питьевая вода-->
+                    <input class="control-input" type="checkbox" name="Питьевая вода" id="water" >
                     <span class="control-mark"></span>
                     <span class="control-label">Питьевая вода</span>
                   </label>
                 </li>
                 <li>
-                  <label class="order-form__label visually-hidden" for="milk"><!--Молоко-->
-                    <input class="control-input visually-hidden" type="checkbox" name="Молоко" id="milk">
+                  <label class="order-form__label" for="milk"><!--Молоко-->
+                    <input class="control-input" type="checkbox" name="Молоко" id="milk">
                     <span class="control-mark"></span>
                     <span class="control-label">Молоко</span>
                   </label>
                 </li>
                 <li>
-                  <label class="order-form__label visually-hidden" for="vitamins"><!--Витамины-->
-                    <input class="control-input visually-hidden" type="checkbox" name="Витамины" id="vitamins">
+                  <label class="order-form__label" for="vitamins"><!--Витамины-->
+                    <input class="control-input" type="checkbox" name="Витамины" id="vitamins">
                     <span class="control-mark"></span>
                     <span class="control-label">Витамины</span>
                   </label>
@@ -159,10 +181,12 @@
           <p class="order-form__annotation-text">* - Обязательные поля</p>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--darken">
         <div class="container">
-          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts__text-container">
+            <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
           <picture>
             <source media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" type="image/png" width="1440" height="400">
             <source media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" type="image/png" width="768" height="400">
@@ -174,10 +198,10 @@
     <footer class="footer">
       <div class="container">
         <div class="logo">
-          <a class="logo__link link" href="index.html">
+          <a class="footer__logo-link logo__link link" href="index.html">
             <img class="logo__text " src="images/logo-text-mobile-tablet.svg" width="128" height="24" alt="Cat energy">
           </a>
-          </div>
+        </div>
         <div class="social">
           <a class="social__item" href="#">
             <span class="visually-hidden">Мы во Вконтакте.</span>
@@ -198,10 +222,10 @@
             </svg>
           </a>
         </div>
-        <a class="copyright link" href="#">
-          <span class="copyright__text">HTML Academy</span>
+        <a class="footer__copyright" href="#">
+          <span class="footer__copyright-text">HTML Academy</span>
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0-83854-420)">
+            <g clip-path="url(#clip0_83854_420)">
             <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
             </g>
             <defs>

@@ -1,0 +1,37 @@
+.contacts {
+  margin: 0;
+}
+
+.contacts__text-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 26px 0;
+}
+
+.contacts__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 50%;
+  margin: 0;
+}
+
+.contacts__text {
+  line-height: 20px;
+  color: #444444;
+  width: 50%;
+  margin: 0;
+}
+
+.contacts__map {
+  min-width: 100vw;
+  margin: 0 -20px; //костыль на отсутствие марджина
+}
+
+.contacts--darken {
+  margin: 0 -20px;
+  background-color: #f2f2f2;
+  padding: 0 20px;
+}
