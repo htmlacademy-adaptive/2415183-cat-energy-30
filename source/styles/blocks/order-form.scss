@@ -2,85 +2,82 @@
   margin: 0;
   padding: 0;
   padding-bottom: 32px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: #444444;
 }
 
-.order-form__parameters{
+.order-form__parameters {
   display: flex;
   flex-direction: column;
   gap: 14px;
   position: relative;
 
-  &::after{
+  &::after {
     content: "";
     width: 100vw;
     height: 1px;
-    border-top: 1px solid #D9D9D9;
+    border-top: 1px solid #d9d9d9;
     margin: 24px -18px 0;
   }
 }
 
-.order-form__parameters-item{
+.order-form__parameters-item {
   display: flex;
   gap: 13px;
 }
 
-.order-form__label{
+.order-form__label {
   align-self: center;
 }
-.order-form__input{
+
+.order-form__input {
   flex-grow: 1;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: #444444;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   padding-left: 15px;
   padding-top: 14px;
   padding-bottom: 13px;
-
 }
 
-.order-form__program-type-list{
+.order-form__program-type-list {
   list-style: none;
   margin: 0;
 }
 
-.order-form__program-type-list li:not(:last-of-type){
+.order-form__program-type-list li:not(:last-of-type) {
+  margin: 0;
   margin-bottom: 15px;
+  padding: 0;
 }
 
-.order-form__program-type{
+.order-form__program-type {
   padding-top: 22px;
   position: relative;
 
-  &::after{
+  &::after {
     position: absolute;
     content: "";
     width: 100vw;
     height: 1px;
-    border-top: 1px solid #D9D9D9;
+    border-top: 1px solid #d9d9d9;
     margin: 19px -18px 0;
   }
 }
 
-.order-form__program-type-list{
-  margin: 0;
-  padding: 0;
-}
-
-.order-form__label-text{
+.order-form__label-text {
   padding-left: 15px;
 }
 
-.order-form__owner-contacts{
+.order-form__owner-contacts {
   padding: 26px 0 24px;
 }
 
-.order-form__title{
+.order-form__title {
   font-size: 24px;
   line-height: 26px;
   color: #000000;
@@ -90,33 +87,33 @@
   margin: 0;
 }
 
-.order-form__owner-contacts-items{
+.order-form__owner-contacts-items {
   display: flex;
   flex-direction: column;
   gap: 14px;
   margin-top: 35px;
 }
 
-.order-form__owner-contacts-item{
+.order-form__owner-contacts-item {
   display: flex;
   gap: 14px;
   justify-content: space-between;
 }
 
 .order-form__e-mail,
-.order-form__tel{
+.order-form__tel {
   flex-grow: 1;
   font-size: 16px;
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   color: #444444;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   padding-left: 15px;
   padding-top: 14px;
   padding-bottom: 13px;
 }
 
-.order-form__comment-textarea{
+.order-form__comment-textarea {
   margin: 0;
   margin-top: 38px;
   margin-bottom: 23px;
@@ -126,12 +123,12 @@
   padding: 14px;
   font-size: 16px;
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   color: #444444;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 }
 
-.order-form__extra-list{
+.order-form__extra-list {
   list-style: none;
   margin: 0;
   margin-top: 34px;
@@ -142,8 +139,8 @@
   gap: 13px;
 }
 
-.order-form__annotation-text{
-  font-family: $primary-font;
+.order-form__annotation-text {
+  font-family: $primary-font, sans-serif;
   line-height: 16px;
   text-transform: none;
   color: #000000;

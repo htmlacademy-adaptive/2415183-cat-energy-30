@@ -5,13 +5,13 @@
   padding: 0;
 }
 
-.program__item{
+.program__item {
   margin-bottom: 20px;
-  background-color: #F2F2F2;
-
+  background-color: #f2f2f2;
 }
-.program__title{
-  font-family: "Oswald";
+
+.program__title {
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: #000000;
   font-size: 24px;
@@ -21,7 +21,8 @@
   padding-left: 90px;
   margin: 0;
 }
-.program__text{
+
+.program__text {
   margin: 0;
   margin-top: 22px;
   margin-bottom: 38px;
@@ -29,8 +30,8 @@
 }
 
 .program__pro-link,
-.program__slim-link{
-  font-family: "Oswald";
+.program__slim-link {
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: #000000;
   font-size: 16px;

@@ -1,5 +1,5 @@
 .hero {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   color: #ffffff;
   text-align: center;
   background-image: url("../../images/index/mobile-hero-background@1x.png");
@@ -19,14 +19,14 @@
   margin-bottom: 25px;
 }
 
-.hero__text{
+.hero__text {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   margin-bottom: 29px;
 }
 
-.hero__selection-link{
+.hero__selection-link {
   background-color: $green-basic;
   color: #ffffff;
   display: block;

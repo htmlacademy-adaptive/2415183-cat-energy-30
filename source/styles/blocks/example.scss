@@ -1,28 +1,28 @@
 .example {
   padding: 24px 20px 40px;
   margin: 0 -20px;
-  background-color: #EAEAEA;
-
+  background-color: #eaeaea;
 }
 
-.example__title{
-  font-family: "Oswald";
+.example__title {
+  font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 40px;
   font-weight: 400;
 }
 
-.example__text{
+.example__text {
   margin: 0;
   margin-bottom: 35px;
 }
 
-.example__info{
+.example__info {
   margin: 0;
 }
-.example__info-subtitle{
-  font-family: "Oswald";
+
+.example__info-subtitle {
+  font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -32,15 +32,15 @@
   margin-bottom: 7px;
 }
 
-.example__info-text{
+.example__info-text {
   font-size: 12px;
   margin: 0;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.example__cost{
-  font-family: "Oswald";
+.example__cost {
+  font-family: "Oswald", sans-serif;
   line-height: 20px;
   margin: 0;
   text-align: center;

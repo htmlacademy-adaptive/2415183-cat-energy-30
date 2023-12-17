@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.catalog-list__card{
+.catalog-list__card {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 55px 48px 40px;
@@ -16,27 +16,24 @@
   padding-bottom: 25px;
 }
 
-.card__product-name{
-  font-family: "Oswald";
+.card__product-name {
+  font-family: "Oswald", sans-serif;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 14px;
   display: block;
+  grid-area: title;
 }
 
-.card__img{
+.card__img {
   grid-area: card-image;
   position: relative;
   top: 0%;
   left: 25%;
 }
 
-.card__product-name{
-  grid-area: title;
-}
-
-.product-specs{
+.product-specs {
   grid-area: specs;
   display: flex;
   flex-direction: column;
@@ -46,13 +43,13 @@
   color: #444444;
 }
 
-.product-specs__item{
+.product-specs__item {
   display: flex;
   position: relative;
   justify-content: space-between;
 }
 
-.card__order-button{
+.card__order-button {
   grid-area: link;
   height: 40px;
   margin: 0;
@@ -60,7 +57,3 @@
   display: flex;
   justify-content: center;
 }
-
-
-
-

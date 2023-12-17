@@ -1,31 +1,30 @@
 .footer {
   padding: 40px 20px;
-  margin: 0;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin: 0 -20px;
 }
 
-.footer__logo-link{
+.footer__logo-link {
   margin: 0;
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
 }
 
-.social{
+.social {
   display: flex;
   gap: 24px;
   justify-content: center;
   margin-bottom: 40px;
 }
 
-.footer__copyright{
+.footer__copyright {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
 }
 
-.footer__copyright-text{
+.footer__copyright-text {
   font-size: 16px;
   line-height: 20px;
   align-self: center;

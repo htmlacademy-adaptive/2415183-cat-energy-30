@@ -4,14 +4,14 @@
   padding: 0;
 }
 
-.additional-products-list__item{
+.additional-products-list__item {
   padding: 13px 0 19px;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
 }
 
-.additional-products-list__item-name{
-  font-family: "Oswald";
+.additional-products-list__item-name {
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -20,22 +20,23 @@
   margin-bottom: 13px;
 }
 
-.additional-products-list__item-info{
+.additional-products-list__item-info {
   display: flex;
   margin-bottom: 15px;
   justify-content: center;
 }
+
 .additional-products-list__item-quantity,
-.additional-products-list__item-price{
+.additional-products-list__item-price {
   line-height: 14px;
   margin: 0;
 }
 
-.additional-products-list__item-price{
+.additional-products-list__item-price {
   margin-left: auto;
 }
 
-.additional-products-list__button{
+.additional-products-list__button {
   display: flex;
   justify-content: center;
 }
