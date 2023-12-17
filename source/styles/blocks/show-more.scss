@@ -1,3 +1,23 @@
-.ttt {
-  color: #ff0000;
+.show-more {
+  position: relative;
+  padding: 25px 0;
+}
+
+.show-more__subtitle{
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.show-more__text{
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 21px;
 }
