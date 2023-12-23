@@ -8,6 +8,38 @@
 .program__item {
   margin-bottom: 20px;
   background-color: #f2f2f2;
+  position: relative;
+}
+
+.program__item::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: $green-basic;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 24px;
+}
+
+.program__item-slim-image{
+  display: block;
+  width: 36px;
+  height: 50px;
+  background-image: url("../../images/cat-slim.svg");
+  position: absolute;
+  left: 27px;
+  top: 21px;
+}
+
+.program__item-pro-image{
+  display: block;
+  width: 67px;
+  height: 28px;
+  background-image: url("../../images/cat-pro.svg");
+  position: absolute;
+  left: 12px;
+  top: 37px;
 }
 
 .program__title {
@@ -22,12 +54,14 @@
   margin: 0;
 }
 
+
 .program__text {
   margin: 0;
   margin-top: 22px;
   margin-bottom: 38px;
   padding: 0 33px 0 20px;
 }
+
 
 .program__pro-link,
 .program__slim-link {
@@ -40,4 +74,17 @@
   padding: 0 20px 18px;
   box-sizing: border-box;
   display: block;
+  position: relative;
+}
+
+.program__item-arrow{
+  position:absolute;
+  left: 110px;
+  bottom: 20px;
+  transition: transform 0.5s ease;
+
+    &:hover{
+      transform: scaleX(1.3) translateX(3px);
+
+    }
 }
