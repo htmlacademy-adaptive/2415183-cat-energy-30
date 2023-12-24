@@ -22,18 +22,36 @@
   margin-bottom: 20px;
 }
 
-.advantages__image-wrapper {
+.advantages__image--leaf {
   background-color: $green-basic;
   width: 60px;
   height: 60px;
   position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("../images/icons/stack.svg#icon_leaf");
+      background-size: 30px 32px;
+      width: 30px;
+      height: 32px;
+      position: absolute;
+    }
 }
 
-.advantages__image {
-  position: absolute;
-  left: 17px;
-  transform: translateY(50%);
-}
+// .advantages__image {
+//   position: absolute;
+//   // left: 17px;
+//   // transform: translateY(50%);
+// }
+
+// .advantages__image--leaf{
+//   background-image: url("../images/icons/stack.svg#iconleaf");
+//   background-size: 30px 32px;
+//   width: 30px;
+//   height: 32px;
+//   z-index: 2;
+// }
+
 
 .advantages__text {
   margin: 0;
