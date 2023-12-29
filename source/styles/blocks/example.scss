@@ -8,6 +8,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
   margin-bottom: 40px;
   font-weight: 400;
 }
@@ -19,6 +20,17 @@
 
 .example__info {
   margin: 0;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.example-card-wrapper{
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  width: 124px;
+  height: 56px;
+  position: relative;
 }
 
 .example__info-subtitle {
@@ -29,14 +41,21 @@
   color: #000000;
   margin: 0;
   text-align: center;
-  margin-bottom: 7px;
+
+  margin-top: 15px;
 }
 
 .example__info-text {
   font-size: 12px;
+  line-height: 12px;
   margin: 0;
   text-align: center;
   margin-bottom: 20px;
+  background-color: #eaeaea;
+  max-width: 80px;
+  position: absolute;
+  left: 22px;
+  top: 47px;
 }
 
 .example__cost {
@@ -44,5 +63,6 @@
   line-height: 20px;
   margin: 0;
   text-align: center;
+  margin-top: 34px;
   margin-bottom: 20px;
 }
