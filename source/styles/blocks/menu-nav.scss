@@ -1,21 +1,25 @@
-// .menu-nav {
-//   display: none;
-// }
-.menu-nav__toggle-open {
-  width: 24px;
-  height: 16px;
-  padding: 4px 0;
-  border: none;
-  background-color: transparent;
+.menu-nav {
+  // display: none;
+  position: relative;
 }
 
-
 .menu-nav__toggle-close {
+  position: absolute;
+  right: 3px;
+  top: -31px;
   width: 18px;
   height: 18px;
   padding: 4px 0;
   background-color: transparent;
   border: none;
+
+    &:hover{
+      opacity: 0.6;
+    }
+
+    &:active{
+      opacity: 0.3;
+    }
 }
 
 .menu-nav__list {

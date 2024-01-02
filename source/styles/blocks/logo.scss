@@ -1,3 +1,8 @@
+// .logo{
+//   display: flex;
+//   justify-content: space-between;
+
+// }
 .logo__link-text--footer {
   margin: 0;
   margin-bottom: 40px;
@@ -16,17 +21,13 @@
     }
 }
 
-.header__logo{
-
-    &:hover{
-      opacity: 0.8;
-    }
-
-    &:active{
-      opacity: 0.6;
-    }
+.logo__link-img{
+  display: block;
+  text-decoration: none;
 }
 
-.logo__link-img{
-  text-decoration: none;
+.logo__link-text-header{
+  display: block;
+  margin: 0 0;
+  margin-left: 56px;
 }

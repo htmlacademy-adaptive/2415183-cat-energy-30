@@ -30,12 +30,13 @@
               </picture>
             </a>
           </div>
-          <button class="menu-nav__toggle-open" type="button">
+          <button class="header__toggle-open" type="button">
             <span class="visually-hidden">Открыть меню.</span>
             <svg width="24" height="16">
               <use href="images\icons\stack.svg#nav-burger"></use>
             </svg>
           </button>
+        </div>
           <nav class="menu-nav">
             <button class="menu-nav__toggle-close" type="button">
               <span class="visually-hidden">Закрыть меню.</span>
@@ -61,7 +62,6 @@
               </li>
             </ul>
           </nav>
-        </div>
       </div>
     </header>
     <main class="main">
@@ -146,15 +146,25 @@
           </dl>
           <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
           <div class="example__slider">
-            <span class="example__slider-bar"></span>
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/index/tablet-desktop-before@1x.png 1x, images/index/tablet-desktop-before@2x.png 2x" type="image/png" width="560" height="512">
-              <img class="example__image" src="images/index/mobile-before@1x.png" srcset="images/index/mobile-before@2x.png 2x" width="280" height="256" alt="До курса">
-            </picture>
             <picture>
               <source media="(min-width: 768px)" srcset="images/index/tablet-desktop-after@1x.png 1x, images/index/tablet-desktop-after@2x.png 2x" type="image/png" width="560" height="512">
-              <img class="example__image" src="images/index/mobile-after@1x.png" srcset="images/index/mobile-after@2x.png 2x" width="280" height="256" alt="После курса">
+              <img class="example__image-after" src="images/index/mobile-after@1x.png" srcset="images/index/mobile-after@2x.png 2x" width="280" height="256" alt="После курса">
             </picture>
+            <div class="slider__before-and-button">
+              <div class="slider__before">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="images/index/tablet-desktop-before@1x.png 1x, images/index/tablet-desktop-before@2x.png 2x" type="image/png" width="560" height="512">
+                  <img class="example__image-before" src="images/index/mobile-before@1x.png" srcset="images/index/mobile-before@2x.png 2x" width="280" height="256" alt="До курса">
+                </picture>
+              </div>
+              <button class="example__button" aria-label="ползунок слайдера" type="button">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1" y="1" width="38" height="38" rx="19" fill="#fff" />
+                  <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666" stroke-width="2" />
+                  <path d="m16 11-8 9 8 9v-18Zm16 9-8-9v18l8-9Z" fill="#666" />
+                </svg>
+            </button>
+            </div>
           </div>
         </div>
       </section>
