@@ -13,7 +13,20 @@
     "card-image specs"
     "link link";
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  position: relative;
+
+    &::after{
+      display: block;
+      content: "";
+      width: calc(100% + 40px);
+      border-bottom: 1px solid #ebebeb;
+      position: absolute;
+      bottom: 0px;
+      margin: 0 -20px;
+    }
+
 }
 
 .card__product-name {
@@ -26,11 +39,12 @@
   grid-area: title;
 }
 
-.card__img {
+.card__img-wrapper {
   grid-area: card-image;
   position: relative;
-  top: 0%;
-  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-specs {
@@ -56,4 +70,5 @@
   margin-top: 17px;
   display: flex;
   justify-content: center;
+  background-color: $green-basic;
 }

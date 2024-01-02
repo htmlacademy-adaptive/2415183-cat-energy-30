@@ -1,6 +1,9 @@
 .show-more {
   position: relative;
   padding: 25px 0;
+  margin: 0 -20px;
+  border-bottom: 1px solid #ebebeb;
+
 }
 
 .show-more__subtitle {
@@ -11,31 +14,57 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+  margin-top: 58px;
   margin-bottom: 8px;
+  position: relative;
+
+    &::before{
+    content: "";
+      width: 30px;
+      height: 30px;
+      background-image: url("../../images/icons/stack.svg#icon-plus");
+      background-size: 30px 30px;
+      position: absolute;
+      top:-58px;
+      left:50%;
+      transform: translateX(-50%);
+  }
+
 }
 
 .show-more__text {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  margin: 0;
+  margin: 0 -20px;
   margin-bottom: 21px;
 }
 
 .show-more__button {
-  .button--light {
-    background-color: #f2f2f2;
-    color: #444444;
-    padding: 10px 44px;
-    margin: 0;
-    width: 100%;
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    border: none;
-    box-sizing: border-box;
-    display: block;
-    text-align: center;
+  background-color: #f2f2f2;
+  color: #444444;
+  padding: 10px 44px;
+  margin: 0;
+  margin-left: 20px;
+  max-width: calc(100% - 40px);
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+
+      &:hover{
+        background-color: #ebebeb;
+        color: #444444;
+      }
+
+      &:active{
+        background-color: #ebebeb;
+        color: #444444;
+      }
   }
-}
+
