@@ -259,9 +259,10 @@ width: 40px;
 height: 40px;
 border: 1px solid #cdcdcd;
 margin-right: 17px;
+box-sizing: border-box;
 }
 
-.order-form__input[type="checkbox"] + .order-form__custom-checkbox{
+.order-form-input--checkbox[type="checkbox"] + .order-form__custom-checkbox{
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -271,7 +272,7 @@ margin-right: 17px;
   padding: 0;
 }
 
-.order-form__input[type="checkbox"]:checked + .order-form__custom-checkbox{
+.order-form__input--checkbox[type="checkbox"]:checked + .order-form__custom-checkbox{
   background-image: url("../../images/icons/stack.svg#checkbox");
   width: 40px;
   height: 40px;
@@ -281,19 +282,19 @@ margin-right: 17px;
   box-sizing: border-box;
 }
 
-.order-form__input[type="checkbox"]:checked:hover + .order-form__custom-checkbox{
+.order-form__input--checkbox[type="checkbox"]:checked:hover + .order-form__custom-checkbox{
   border: 1px solid #bababa;
 }
 
-.order-form__input[type="checkbox"]:hover + .order-form__custom-checkbox-checkbo{
+.order-form__input--checkbox[type="checkbox"]:hover + .order-form__custom-checkbox-checkbo{
   border: 1px solid #bababa;
 }
 
-.order-form__input[type="checkbox"]:checked:disabled + .order-form__custom-checkbo{
+.order-form__input--checkbox[type="checkbox"]:checked:disabled + .order-form__custom-checkbo{
   border: 1px solid #bababa;
 }
 
-.order-form__input[type="checkbox"]:disabled + .order-form__custom-checkbo{
+.order-form__input--checkbox[type="checkbox"]:disabled + .order-form__custom-checkbo{
   opacity: 0.3;
 }
 
