@@ -79,47 +79,69 @@
             <div class="order-form__parameters">
               <div class="order-form__parameters-item">
                 <label class="order-form__label" for="cat-name">Имя:*</label>
-                <input class="order-form__input input" type="text" name="Имя кота" id="cat-name" placeholder="Укажите имя" value="Барсик">
+                <input
+                  class="order-form__input input"
+                  type="text" name="Имя кота"
+                  id="cat-name"
+                  placeholder="Укажите имя"
+                  value="Барсик"
+                  required
+                />
               </div>
               <div class="order-form__parameters-item">
                 <label class="order-form__label" for="cat-weight">Вес (кг):*</label>
-                <input class="order-form__input input" type="number" name="Вес кота" id="cat-weight" placeholder="Укажите вес" value="7">
+                <input
+                  class="order-form__input input"
+                  type="number"
+                  name="Вес кота"
+                  id="cat-weight"
+                  placeholder="Укажите вес"
+                  value="7"
+                  required
+                />
               </div>
               <div class="order-form__parameters-item">
                 <label class="order-form__label" for="cat-age">Возраст (лет):</label>
-                <input class="order-form__input input" type="number" name="Возраст кота" id="cat-age" placeholder="Укажите возраст" value="7">
+                <input
+                  class="order-form__input input"
+                  type="number"
+                  name="Возраст кота"
+                  id="cat-age"
+                  placeholder="Укажите возраст"
+                  value="7"
+                  />
               </div>
             </div>
             <div class="order-form__program-type">
               <ul class="order-form__program-type-list">
                 <li>
                   <label class="order-form__label" for="weight-loss"><!--Похудение-->
-                    <input class="order-form__input input" type="radio" name="программа питания" id="weight-loss" value="Похудение" checked>
-                    <span class="order-form__custom-radio"></span>
+                    <input class="order-form__input visually-hidden" type="radio" name="программа питания" id="weight-loss" value="Похудение" checked>
+                    <span class="order-form__custom"></span>
                     <span class="order-form__label-text">Похудение</span>
                   </label>
                 </li>
                 <li>
                   <label class="order-form__label" for="weight-gain"><!--Набор массы-->
-                    <input class="order-form__input" type="radio" name="программа питания" id="weight-gain" value="Набор массы">
-                    <span class="order-form__custom-radio"></span>
+                    <input class="order-form__input visually-hidden" type="radio" name="программа питания" id="weight-gain" value="Набор массы">
+                    <span class="order-form__custom"></span>
                     <span class="order-form__label-text">Набор массы</span>
                   </label>
                 </li>
                 <li>
                   <label class="order-form__label" for="idk"><!--Не знаю (нужен ваш совет)-->
-                    <input class="order-form__input " type="radio" name="программа питания" id="idk" value="Не знаю (нужен ваш совет)">
-                    <span class="order-form__custom-radio"></span>
+                    <input class="order-form__input visually-hidden" type="radio" name="программа питания" id="idk" value="Не знаю (нужен ваш совет)">
+                    <span class="order-form__custom"></span>
                     <span class="order-form__label-text">Не знаю (нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
             </div>
             <div class="order-form__owner-contacts">
-              <h2 class="order-form__title title">Контактные данные (владельца кота)</h2>
+              <h2 class="order-form__title title">Контактные данные <br> (владельца кота)</h2>
               <div class="order-form__owner-contacts-items">
                 <div class="order-form__owner-contacts-item">
-                  <label class="order-form__label" for="owner-e-mail">e-mail:*</label>
+                  <label class="order-form__label order-form__label--mail" for="owner-e-mail">e-mail:*</label>
                   <input
                     class="order-form__e-mail input"
                     name="e-mail"
@@ -131,13 +153,14 @@
                   />
                 </div>
                 <div class="order-form__owner-contacts-item">
-                  <label class="order-form__label" for="owner-tel">Телефон:*</label>
+                  <label class="order-form__label order-form__label--phone" for="owner-tel">Телефон:*</label>
                   <input
                     class="order-form__tel input"
                     name="телефон"
                     id="owner-tel"
                     type="tel"
                     placeholder="Ваш телефон"
+                    value="8 (960) 900-60-90"
                     required
                   />
                 </div>
@@ -153,35 +176,35 @@
               <ul class="order-form__extra-list">
                 <li>
                   <label class="order-form__label" for="sugar-substitude"><!--Сахарозаменитель-->
-                    <input class="control-input" type="checkbox" name="Сахарозаменитель" id="sugar-substitude" checked>
-                    <span class="control-mark"></span>
-                    <span class="control-label">Сахарозаменитель</span>
+                    <input class="order-form-input " type="checkbox" name="Сахарозаменитель" id="sugar-substitude" checked>
+                    <span class="order-form__custom-checkbox"></span>
+                    <span class="order-form-label-text">Сахарозаменитель</span>
                   </label>
                 </li>
                 <li>
                   <label class="order-form__label" for="water"><!--Питьевая вода-->
-                    <input class="control-input" type="checkbox" name="Питьевая вода" id="water" >
-                    <span class="control-mark"></span>
-                    <span class="control-label">Питьевая вода</span>
+                    <input class="order-form-input " type="checkbox" name="Питьевая вода" id="water" >
+                    <span class="order-form__custom-checkbox"></span>
+                    <span class="order-form-label-text">Питьевая вода</span>
                   </label>
                 </li>
                 <li>
                   <label class="order-form__label" for="milk"><!--Молоко-->
-                    <input class="control-input" type="checkbox" name="Молоко" id="milk">
-                    <span class="control-mark"></span>
-                    <span class="control-label">Молоко</span>
+                    <input class="order-form-input " type="checkbox" name="Молоко" id="milk">
+                    <span class="order-form__custom-checkbox"></span>
+                    <span class="order-form-label-text">Молоко</span>
                   </label>
                 </li>
                 <li>
                   <label class="order-form__label" for="vitamins"><!--Витамины-->
-                    <input class="control-input" type="checkbox" name="Витамины" id="vitamins">
-                    <span class="control-mark"></span>
-                    <span class="control-label">Витамины</span>
+                    <input class="order-form-input " type="checkbox" name="Витамины" id="vitamins">
+                    <span class="order-form__custom-checkbox"></span>
+                    <span class="order-form-label-text">Витамины</span>
                   </label>
                 </li>
               </ul>
             </div>
-            <button class="order-form__submit button" type="submit">отправить заявку</button>
+            <button class="order-form__submit link button" type="submit">отправить заявку</button>
             </div>
           </form>
           <p class="order-form__annotation-text">* - Обязательные поля</p>
@@ -193,11 +216,9 @@
             <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
             <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" type="image/png" width="1440" height="400">
-            <source media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" type="image/png" width="768" height="400">
-            <img class="contacts__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png" width="320" height="362" alt="Наше местоположение">
-          </picture>
+          <div class="contacts__map-widget">
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323253%2C59.938379&mode=whatshere&whatshere%5Bpoint%5D=30.323053%2C59.938535&whatshere%5Bzoom%5D=17&z=16" width="320" height="362" frameborder="" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
         </div>
       </section>
     </main>
