@@ -1,3 +1,33 @@
-.ttt {
-  color: #ff0000;
+// .logo{
+//   display: flex;
+//   justify-content: space-between;
+
+// }
+.logo__link-text--footer {
+  margin: 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+
+  &:hover path {
+    background-color: transparent;
+    fill: #3e3e3e;
+  }
+
+  &:active path {
+    background-color: transparent;
+    fill: #6b6b6b;
+  }
+}
+
+.logo__link-img {
+  display: block;
+  text-decoration: none;
+}
+
+.logo__link-text-header {
+  display: block;
+  margin: 0 0;
+  margin-left: 56px;
 }

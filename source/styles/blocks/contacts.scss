@@ -25,9 +25,15 @@
   margin: 0;
 }
 
-.contacts__map {
-  min-width: 100vw;
+.contacts__map-widget {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
   margin: 0 -20px; //костыль на отсутствие марджина
+}
+
+.contacts__map-widget iframe {
+  border: none;
 }
 
 .contacts--darken {

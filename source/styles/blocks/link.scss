@@ -2,3 +2,12 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.link:hover {
+  background-color: #5eaa2f;
+}
+
+.link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
+}

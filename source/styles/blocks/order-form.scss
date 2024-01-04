@@ -29,7 +29,9 @@
 }
 
 .order-form__label {
-  align-self: center;
+  display: flex;
+  align-items: center;
+  // не получаетсчя сделать прозрачность при disabled
 }
 
 .order-form__input {
@@ -44,9 +46,16 @@
   padding-bottom: 13px;
 }
 
+.order-form__input::-webkit-outer-spin-button,
+.order-form__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .order-form__program-type-list {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .order-form__program-type-list li:not(:last-of-type) {
@@ -54,6 +63,55 @@
   margin-bottom: 15px;
   padding: 0;
 }
+
+.order-form__input[type="radio"] + .order-form__custom {
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.order-form__input[type="radio"]:checked + .order-form__custom {
+  background-image: url("../../images/icons/stack.svg#radiobutton");
+  width: 40px;
+  height: 40px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 11px;
+}
+
+.order-form__input[type="radio"]:checked:hover + .order-form__custom {
+  border: 1px solid #bababa;
+}
+
+.order-form__input[type="radio"]:hover + .order-form__custom {
+  border: 1px solid #bababa;
+}
+
+.order-form__input[type="radio"]:checked:focus + .order-form__custom {
+  border: 1px solid #444444;
+}
+
+.order-form__input[type="radio"]:focus + .order-form__custom {
+  border: 2px solid #444444;
+}
+
+.order-form__input[type="radio"]:checked:disabled + .order-form__custom {
+  border: 2px solid #bababa;
+}
+
+.order-form__input[type="radio"]:disabled + .order-form__custom {
+  opacity: 0.3;
+}
+
 
 .order-form__program-type {
   padding-top: 22px;
@@ -85,6 +143,20 @@
   text-transform: none;
   align-self: center;
   margin: 0;
+  padding-right: 20px;
+  position: relative;
+  background-color: #ffffff;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    width: 100vw;
+    border: 1px solid #68b738;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    z-index: -1;
+  }
 }
 
 .order-form__owner-contacts-items {
@@ -98,6 +170,7 @@
   display: flex;
   gap: 14px;
   justify-content: space-between;
+  position: relative;
 }
 
 .order-form__e-mail,
@@ -111,6 +184,47 @@
   padding-left: 15px;
   padding-top: 14px;
   padding-bottom: 13px;
+  position: relative;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+}
+
+.order-form__label--mail::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/icons/stack.svg#icon-mail");
+  background-size: 20px 20px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.order-form__label--phone::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/icons/stack.svg#icon-phone");
+  background-size: 20px 20px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
 }
 
 .order-form__comment-textarea {
@@ -139,6 +253,51 @@
   gap: 13px;
 }
 
+.order-form__custom-checkbox {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #cdcdcd;
+  margin-right: 17px;
+  box-sizing: border-box;
+}
+
+.order-form-input-checkbox[type="checkbox"] + .order-form__custom-checkbox {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.order-form__input-checkbox[type="checkbox"]:checked + .order-form__custom-checkbox {
+  background-image: url("../../images/icons/stack.svg#checkbox");
+  width: 40px;
+  height: 40px;
+  background-size: 24px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.order-form__input-checkbox[type="checkbox"]:checked:hover + .order-form__custom-checkbox {
+  border: 1px solid #bababa;
+}
+
+.order-form__input-checkbox[type="checkbox"]:hover + .order-form__custom-checkbox-checkbo {
+  border: 1px solid #bababa;
+}
+
+.order-form__input-checkbox[type="checkbox"]:checked:disabled + .order-form__custom-checkbo {
+  border: 1px solid #bababa;
+}
+
+.order-form__input-checkbox[type="checkbox"]:disabled + .order-form__custom-checkbo {
+  opacity: 0.3;
+}
+
+
 .order-form__annotation-text {
   font-family: $primary-font, sans-serif;
   line-height: 16px;
@@ -147,4 +306,15 @@
   text-align: center;
   margin: 0;
   margin-top: 21px;
+}
+
+.order-form__submit {
+  background-color: $green-basic;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 44px;
+  margin: 0;
+  border: none;
 }
