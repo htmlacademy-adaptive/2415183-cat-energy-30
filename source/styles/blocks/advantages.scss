@@ -24,7 +24,6 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-
 }
 
 .advantages__image-leaf {
@@ -33,64 +32,67 @@
   height: 60px;
   position: relative;
 
-    &::after {
-      content: "";
-      background-image: url("../../images/icons/stack.svg#icon_leaf");
-      background-size: 30px 32px;
-      width: 30px;
-      height: 32px;
-      position: absolute;
-      left: 15px;
-      top: 15px;
-    }
+  &::after {
+    content: "";
+    background-image: url("../../images/icons/stack.svg#icon_leaf");
+    background-size: 30px 32px;
+    width: 30px;
+    height: 32px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
 }
+
 .advantages__image-water {
   background-color: $green-basic;
   width: 60px;
   height: 60px;
   position: relative;
 
-    &::after {
-      content: "";
-      background-image: url("../../images/icons/stack.svg#icon_water");
-      width: 26px;
-      height: 28px;
-      position: absolute;
-      left: 17px;
-      top: 15px;
-    }
+  &::after {
+    content: "";
+    background-image: url("../../images/icons/stack.svg#icon_water");
+    width: 26px;
+    height: 28px;
+    position: absolute;
+    left: 17px;
+    top: 15px;
+  }
 }
+
 .advantages__image-eat {
   background-color: $green-basic;
   width: 60px;
   height: 60px;
   position: relative;
 
-    &::after {
-      content: "";
-      background-image: url("../../images/icons/stack.svg#icon_eat");
-      width: 25px;
-      height: 30px;
-      position: absolute;
-      left: 17px;
-      top: 15px;
-    }
+  &::after {
+    content: "";
+    background-image: url("../../images/icons/stack.svg#icon_eat");
+    width: 25px;
+    height: 30px;
+    position: absolute;
+    left: 17px;
+    top: 15px;
+  }
 }
+
 .advantages__image-clock {
   background-color: $green-basic;
   width: 60px;
   height: 60px;
   position: relative;
 
-    &::after {
-      content: "";
-      background-image: url("../../images/icons/stack.svg#icon_clock");
-      width: 26px;
-      height: 31px;
-      position: absolute;
-      left: 17px;
-      top: 15px;
-    }
+  &::after {
+    content: "";
+    background-image: url("../../images/icons/stack.svg#icon_clock");
+    width: 26px;
+    height: 31px;
+    position: absolute;
+    left: 17px;
+    top: 15px;
+  }
 }
 
 .advantages__text {

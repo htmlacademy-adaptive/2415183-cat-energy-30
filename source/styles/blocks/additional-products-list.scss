@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 
-  &:last-child li{
+  &:last-child li {
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -13,12 +13,11 @@
   padding: 13px 0 19px;
   border-top: 1px solid #cdcdcd;
 
-  &:last-of-type{
+  &:last-of-type {
     border-bottom: 1px solid #cdcdcd;
     margin-bottom: 35px;
   }
 }
-
 
 
 .additional-products-list__item-name {
@@ -50,4 +49,5 @@
 .additional-products-list__button {
   display: flex;
   justify-content: center;
+  background-color: $green-basic;
 }

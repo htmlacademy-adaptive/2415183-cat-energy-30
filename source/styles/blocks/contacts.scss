@@ -32,6 +32,10 @@
   margin: 0 -20px; //костыль на отсутствие марджина
 }
 
+.contacts__map-widget iframe {
+  border: none;
+}
+
 .contacts--darken {
   margin: 0 -20px;
   background-color: #f2f2f2;

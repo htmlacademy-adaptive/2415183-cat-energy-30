@@ -14,13 +14,13 @@
   border: none;
 
 
-    &:hover{
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 
-    &:active{
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .menu-nav__list {
@@ -44,16 +44,16 @@
   text-decoration: none;
   color: #000000;
 
-    &:hover{
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 
-    &:active{
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.menu-nav__list-link--current{
+.menu-nav__list-link--current {
   border-bottom: 2px solid $green-basic;
   padding-bottom: 8px;
 }

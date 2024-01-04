@@ -2,23 +2,24 @@
   padding: 13px 0 14px 0;
 }
 
-.header__wrapper{
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__logo{
+.header__logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-    &:hover{
-      opacity: 0.8;
-    }
 
-    &:active{
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header__toggle-open {
@@ -29,11 +30,11 @@
   background-color: transparent;
   transform: translateY(-50%);
 
-    &:hover{
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 
-    &:active{
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+  }
 }
