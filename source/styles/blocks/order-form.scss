@@ -19,7 +19,8 @@
     width: 100vw;
     height: 1px;
     border-top: 1px solid #d9d9d9;
-    margin: 24px -18px 0;
+    margin: 0 -20px;
+    margin-top: 24px;
   }
 }
 
@@ -48,6 +49,8 @@
 
 .order-form__input::-webkit-outer-spin-button,
 .order-form__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
   appearance: none;
   margin: 0;
 }
@@ -123,7 +126,7 @@
     width: 100vw;
     height: 1px;
     border-top: 1px solid #d9d9d9;
-    margin: 19px -18px 0;
+    margin: 19px -20px
   }
 }
 

@@ -1,11 +1,13 @@
-.header {
-  padding: 13px 0 14px 0;
-}
+// .header {
+
+// }
 
 .header__wrapper {
+  padding: 13px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header__logo {
@@ -22,13 +24,20 @@
   }
 }
 
+.header__button-wrapper{
+  margin: 0;
+  margin-left: auto;
+}
+
 .header__toggle-open {
   width: 24px;
   height: 16px;
   padding: 4px 0;
   border: none;
   background-color: transparent;
-  transform: translateY(-50%);
+  // position: absolute;
+  // right: 32px;
+  // top: 20px;
 
   &:hover {
     opacity: 0.6;
