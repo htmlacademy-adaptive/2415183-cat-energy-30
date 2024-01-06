@@ -3,6 +3,15 @@
   font-size: 14px;
   line-height: 18px;
   max-width: 320px;
+
+  @media (min-width: $tablet-width){
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width){
+    max-width: 1440px;
+  }
+
 }
 
 .program__wrapper{
@@ -24,6 +33,18 @@
   position: absolute;
   left: 20px;
   top: 24px;
+
+  @media (min-width: $tablet-width){
+    width: 200px;
+    height: 200px;
+    left: 455px;
+    top: 85px;
+  }
+
+  @media (min-width: $desktop-width){
+
+  }
+
 }
 
 .program__item-slim-image {
@@ -34,6 +55,13 @@
   position: absolute;
   left: 27px;
   top: 21px;
+
+  @media (min-width: $tablet-width){
+    width: 140px;
+    height: 194px;
+    left: 487px;
+    top: 73px;
+  }
 }
 
 .program__item-pro-image {
@@ -44,6 +72,13 @@
   position: absolute;
   left: 12px;
   top: 37px;
+
+  @media (min-width: $tablet-width){
+    width: 268px;
+    height: 112px;
+    left: 421px;
+    top: 126px;
+  }
 }
 
 .program__title {
@@ -54,10 +89,16 @@
   line-height: 37px;
   font-weight: 400;
   padding-top: 30px;
-  padding-left: 90px;
   margin: 0;
-}
+  margin-left: 90px;
 
+  @media (min-width: $tablet-width){
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 77px;
+    margin-left: 53px;
+  }
+}
 
 .program__text {
   margin: 0;
@@ -67,6 +108,14 @@
   margin-right: 20px;
   padding: 0 13px 22px 0;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width){
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 340px;
+    margin-left: 53px;
+    border: unset;
+  }
 }
 
 
@@ -83,6 +132,14 @@
   box-sizing: border-box;
   display: block;
   position: relative;
+
+  @media (min-width: $tablet-width){
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 53px;
+    padding: 0;
+    padding-bottom: 57px;
+  }
 }
 
 .program__item-arrow {
@@ -97,6 +154,11 @@
   left: 15px;
   bottom: 10px;
 
+  @media (min-width: $tablet-width){
+    left: 15px;
+    bottom: 55px;
+  }
+
   &:hover {
     background-image: url("../../images/icons/icon-arrow-long.svg");
     background-size: 32px 10px;
@@ -104,6 +166,11 @@
     position: absolute;
     left: 15px;
     bottom: 10px;
+
+    @media (min-width: $tablet-width){
+      left: 15px;
+      bottom: 55px;
+    }
   }
 
   &:active {
@@ -114,5 +181,10 @@
     position: absolute;
     left: 15px;
     bottom: 10px;
+
+    @media (min-width: $tablet-width){
+      left: 15px;
+      bottom: 55px;
+    }
   }
 }
