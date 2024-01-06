@@ -30,4 +30,13 @@
   display: block;
   margin: 0 0;
   margin-left: 56px;
+
+
+  @media (min-width: $tablet-width){
+    margin-left: 13px;
+  }
+
+  @media (min-width: $desktop-width){
+    margin-left: 14px;
+  }
 }

@@ -1,6 +1,7 @@
 .menu-nav {
   // display: none;
   position: relative;
+
 }
 
 .menu-nav__toggle-close {
@@ -13,7 +14,6 @@
   background-color: transparent;
   border: none;
 
-
   &:hover {
     opacity: 0.6;
   }
@@ -21,6 +21,15 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width){
+    display: none;
+  }
+
+  @media (min-width: $desktop-width){
+    display: none;
+  }
+
 }
 
 .menu-nav__list {
@@ -34,15 +43,35 @@
   margin: 0;
   padding-top: 22px;
   padding-bottom: 24px;
+
+  @media (min-width: $tablet-width){
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width){
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
 }
 
 .menu-nav__list-item:not(:last-child) {
-  margin-bottom: 46px;
+    @media (max-width: $mobile-width-only){
+    margin-bottom: 46px;
+  }
 }
 
-.menu-nav__list-item a {
+.menu-nav__list-link {
   text-decoration: none;
   color: #000000;
+  text-align: center;
 
   &:hover {
     opacity: 0.6;
@@ -51,9 +80,20 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $desktop-width){
+    color: #ffffff;
+  }
 }
 
 .menu-nav__list-link--current {
   border-bottom: 2px solid $green-basic;
   padding-bottom: 8px;
+  padding-top: 10px;
+  box-sizing: content-box;
+
+  @media (min-width: $desktop-width){
+    border-color: #ffffff;
+  }
 }
+
