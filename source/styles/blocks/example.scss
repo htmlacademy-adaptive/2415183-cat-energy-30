@@ -1,11 +1,13 @@
 .example {
   padding: 24px 20px 40px;
-  margin: 0 -20px;
   background-color: #eaeaea;
+  max-width: 320px;
+  box-sizing: border-box;
 }
 
 .exampe__wrapper{
-  margin: 0 20px;
+  margin: 0;
+  max-width: calc(100% - 40px);
 }
 
 .example__title {
@@ -26,7 +28,7 @@
   margin: 0;
   display: flex;
   gap: 32px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .example-card-wrapper {

@@ -1,5 +1,6 @@
 .contacts {
   margin: 0;
+  max-width: 320px;
 }
 
 .contacts__text-container {
@@ -26,7 +27,7 @@
 }
 
 .contacts__map-widget {
-  width: 100vw;
+  max-width: 320px;
   display: flex;
   justify-content: center;
   margin: 0;
