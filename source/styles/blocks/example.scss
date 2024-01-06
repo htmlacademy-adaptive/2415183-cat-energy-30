@@ -29,6 +29,7 @@
 
   @media (min-width: $desktop-width){
     max-width: 1220px;
+    padding: 0 110px;
   }
 }
 
@@ -231,7 +232,7 @@
 
   @media (min-width: $desktop-width){
     position: absolute;
-    right: 0;
+    right: 110px;
     top: 40px;
   }
 }
