@@ -12,9 +12,12 @@
 
   @media (min-width: $desktop-width){
     display: flex;
+    width: calc(1440px - 220px);
     justify-content: space-between;
-    padding: 0 110px;
+    padding: 45px 110px;
     align-items: center;
+    position: absolute;
+    z-index: 1;
   }
 }
 
