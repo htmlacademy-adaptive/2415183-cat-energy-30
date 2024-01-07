@@ -80,7 +80,9 @@
   &:active {
     opacity: 0.3;
   }
+}
 
+.menu-nav__list-link--index{
   @media (min-width: $desktop-width){
     color: #ffffff;
   }
@@ -91,7 +93,9 @@
   padding-bottom: 8px;
   padding-top: 10px;
   box-sizing: content-box;
+}
 
+.menu-nav__list-link--current-index{
   @media (min-width: $desktop-width){
     border-color: #ffffff;
   }

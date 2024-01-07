@@ -53,8 +53,8 @@
 
   @media (min-width: $desktop-width){
     display: flex;
-    justify-content: space-between;
-    gap: 78px;
+    // justify-content: space-between; при этом параметре 4 и текст вылезают за стакан
+    gap: 94px;
   }
 }
 
