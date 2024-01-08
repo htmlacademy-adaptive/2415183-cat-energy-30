@@ -2,7 +2,24 @@
   padding: 0;
   padding-bottom: 30px;
   margin: 0;
+  max-width: 320px;
 }
+
+.advantages__wrapper {
+  margin: 0 20px;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0;
+    padding: 0 110px;
+  }
+}
+
 
 .advantages__title {
   font-family: "Oswald", sans-serif;
@@ -10,12 +27,35 @@
   line-height: 40px;
   margin-bottom: 40px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 154px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    // justify-content: space-between; при этом параметре 4 и текст вылезают за стакан
+    gap: 94px;
+  }
 }
 
 .advantages__item {
@@ -24,6 +64,19 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+    padding: 40px 0 57px;
+    width: 230px;
+    min-height: 280px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 175px;
+  }
 }
 
 .advantages__image-leaf {
@@ -42,6 +95,38 @@
     left: 15px;
     top: 15px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    width: 80px;
+    height: 80px;
+
+    &::before {
+      content: "1";
+      font-family: "Oswald", sans-serif;
+      width: 112px;
+      height: 280px;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: 400;
+      text-align: center;
+      color: #f2f2f2;
+      position: absolute;
+      left: 115px;
+      top: -40px;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../../images/icons/stack.svg#icon_leaf");
+      background-size: 30px 32px;
+      width: 30px;
+      height: 32px;
+      position: absolute;
+      left: 25px;
+      top: 25px;
+    }
+  }
 }
 
 .advantages__image-water {
@@ -58,6 +143,37 @@
     position: absolute;
     left: 17px;
     top: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    width: 80px;
+    height: 80px;
+
+    &::before {
+      content: "2";
+      font-family: "Oswald", sans-serif;
+      width: 112px;
+      height: 280px;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: 400;
+      text-align: center;
+      color: #f2f2f2;
+      position: absolute;
+      left: 100px;
+      top: -40px;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../../images/icons/stack.svg#icon_water");
+      width: 26px;
+      height: 28px;
+      position: absolute;
+      left: 28px;
+      top: 25px;
+    }
   }
 }
 
@@ -76,6 +192,37 @@
     left: 17px;
     top: 15px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    width: 80px;
+    height: 80px;
+
+    &::before {
+      content: "3";
+      font-family: "Oswald", sans-serif;
+      width: 112px;
+      height: 280px;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: 400;
+      text-align: center;
+      color: #f2f2f2;
+      position: absolute;
+      left: 115px;
+      top: -39px;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../../images/icons/stack.svg#icon_eat");
+      width: 25px;
+      height: 30px;
+      position: absolute;
+      left: 28px;
+      top: 25px;
+    }
+  }
 }
 
 .advantages__image-clock {
@@ -93,10 +240,48 @@
     left: 17px;
     top: 15px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    width: 80px;
+    height: 80px;
+
+    &::before {
+      content: "4";
+      font-family: "Oswald", sans-serif;
+      width: 112px;
+      height: 280px;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: 400;
+      text-align: center;
+      color: #f2f2f2;
+      position: absolute;
+      left: 115px;
+      top: -39px;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../../images/icons/stack.svg#icon_clock");
+      width: 26px;
+      height: 31px;
+      position: absolute;
+      left: 28px;
+      top: 24px;
+    }
+  }
 }
 
 .advantages__text {
   margin: 0;
   position: absolute;
   left: 80px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    width: 242px;
+  }
 }
