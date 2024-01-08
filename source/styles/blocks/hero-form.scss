@@ -43,8 +43,7 @@
     border: none;
   }
 
-  @media (min-width: $tablet-width){
-    margin: 0;
+  @media (min-width: $desktop-width){
     margin-bottom: 55px;
   }
 }
