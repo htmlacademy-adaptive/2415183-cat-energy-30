@@ -14,7 +14,7 @@ $card-margin-bottom: -53px;
   position: relative;
   margin: 0 20px;
 
-  @media (max-width: $mobile-width-only){
+  @media (max-width: $mobile-width-only) {
     &::after {
       display: block;
       content: "";
@@ -26,7 +26,7 @@ $card-margin-bottom: -53px;
     }
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,9 +34,9 @@ $card-margin-bottom: -53px;
     margin: 0;
     padding: 40px 37px;
     height: 430px; // размеры карточки корректные только при явном значении высоты
-}
+  }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     padding: 0 38px;
   }
 }
@@ -51,7 +51,7 @@ $card-margin-bottom: -53px;
   display: block;
   grid-area: title;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     width: 135px;
     font-size: 20px;
     line-height: 20px;
@@ -61,7 +61,7 @@ $card-margin-bottom: -53px;
     margin-top: 121px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     width: 140px;
     line-height: 24px;
     margin-top: 151px;
@@ -76,14 +76,14 @@ $card-margin-bottom: -53px;
   justify-content: center;
   align-items: center;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: $card-margin-bottom;
   }
 }
 
-.card__img-wrapper--big{
-  @media (min-width: $tablet-width){
+.card__img-wrapper--big {
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: -69px;
   }
@@ -98,7 +98,7 @@ $card-margin-bottom: -53px;
   line-height: 16px;
   color: #444444;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     width: 250px;
     margin: 0;
     padding: 0;
@@ -108,7 +108,7 @@ $card-margin-bottom: -53px;
     line-height: 20px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     width: 169px;
   }
 }
@@ -118,13 +118,13 @@ $card-margin-bottom: -53px;
   position: relative;
   justify-content: space-between;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     padding-top: 6px;
     padding-bottom: 8px;
     border-bottom: 1px solid #cdcdcd;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     padding-top: 8px;
     padding-bottom: 6px;
   }
@@ -139,25 +139,26 @@ $card-margin-bottom: -53px;
   justify-content: center;
   background-color: $green-basic;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-top: 32px;
   }
 }
 
-.card__show-more {
+.card--show-more {
   position: relative;
   padding: 25px 0;
   margin: 0;
   border-bottom: 1px solid #ebebeb;
+  display: block;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     width: 324px;
     height: 428px;//корректный размер только при янвом значении
     padding: 0;
     border: 2px solid #f2f2f2;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     width: 245px;
   }
 }
@@ -185,7 +186,7 @@ $card-margin-bottom: -53px;
     left: 50%;
     transform: translateX(-50%);
 
-    @media (min-width: $tablet-width){
+    @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
       background-size: 60px 60px;
@@ -193,19 +194,19 @@ $card-margin-bottom: -53px;
       top: -104px; //толще, чем надо
     }
 
-    @media (min-width: $desktop-width){
+    @media (min-width: $desktop-width) {
       top: -110px;
     }
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     width: 134px;
     margin: 160px 95px 23px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     margin: 150px 55px 26px;
   }
 }
@@ -217,15 +218,14 @@ $card-margin-bottom: -53px;
   margin: 0 -20px;
   margin-bottom: 21px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
     width: 170px;
-    margin: 0;
     margin: 0 77px 88px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     margin: 0 37px 98px;
   }
 }
@@ -257,12 +257,12 @@ $card-margin-bottom: -53px;
     color: #444444;
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     max-width: 250px;
     margin: 0 37px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     max-width: 170px;
     margin: 0 38px;
     padding: 10px 25px;

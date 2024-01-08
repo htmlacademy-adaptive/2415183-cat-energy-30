@@ -1,7 +1,7 @@
 .hero-catalog {
-  @media (max-width: $mobile-width-only){
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
   }
 }
 
@@ -12,17 +12,14 @@
   font-weight: 400;
   margin: 27px 20px 41px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin: 57px 30px 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 84px;
+  }
 }
-
-  @media (min-width: $desktop-width){
-    margin: 0px 110px 84px;
-}
-}
-
-
-
 

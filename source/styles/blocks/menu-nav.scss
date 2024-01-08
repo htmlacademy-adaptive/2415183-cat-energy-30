@@ -1,7 +1,6 @@
 .menu-nav {
   // display: none;
   position: relative;
-
 }
 
 .menu-nav__toggle-close {
@@ -22,14 +21,13 @@
     opacity: 0.3;
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     display: none;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     display: none;
   }
-
 }
 
 .menu-nav__list {
@@ -44,7 +42,7 @@
   padding-top: 22px;
   padding-bottom: 24px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     gap: 33px;
@@ -52,18 +50,17 @@
     line-height: 24px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
     gap: 33px;
     font-size: 20px;
     line-height: 30px;
   }
-
 }
 
 .menu-nav__list-item:not(:last-child) {
-    @media (max-width: $mobile-width-only){
+  @media (max-width: $mobile-width-only) {
     margin-bottom: 46px;
   }
 }
@@ -82,8 +79,8 @@
   }
 }
 
-.menu-nav__list-link--index{
-  @media (min-width: $desktop-width){
+.menu-nav__list-link--index {
+  @media (min-width: $desktop-width) {
     color: #ffffff;
   }
 }
@@ -95,8 +92,8 @@
   box-sizing: content-box;
 }
 
-.menu-nav__list-link--current-index{
-  @media (min-width: $desktop-width){
+.menu-nav__list-link--current-index {
+  @media (min-width: $desktop-width) {
     border-color: #ffffff;
   }
 }

@@ -2,11 +2,11 @@
   margin: 0;
   max-width: 320px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     max-width: 768px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     max-width: 1440px;
     position: relative;
   }
@@ -18,13 +18,13 @@
   margin: 0 20px;
   padding: 26px 0;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     max-width: 708px;
     margin: 0;
     padding: 61px 70px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     width: 565px;
     padding: 60px 79px;
     box-sizing: border-box;
@@ -34,7 +34,6 @@
     background-color: #ffffff;
     z-index: 2;
   }
-
 }
 
 .contacts__title {
@@ -45,7 +44,7 @@
   width: 50%;
   margin: 0;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     max-width: 163px;
     font-size: 20px;
     line-height: 26px;
@@ -58,7 +57,7 @@
   width: 50%;
   margin: 0;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     max-width: 163px;
     min-height: 80px;
     text-align: right;
@@ -69,7 +68,7 @@
     justify-content: space-between;
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     text-align: left;
   }
 }
@@ -80,11 +79,12 @@
   justify-content: center;
   margin: 0;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     width: 768px;
     height: 400px;
   }
-  @media (min-width: $desktop-width){
+
+  @media (min-width: $desktop-width) {
     width: 1440px;
     height: 400px;
   }
@@ -93,12 +93,12 @@
 .contacts__map-widget iframe {
   border: none;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     width: 768px;
     height: 400px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     width: 1440px;
     height: 400px;
   }

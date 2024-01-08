@@ -5,15 +5,15 @@
   max-width: 320px;
 }
 
-.advantages__wrapper{
+.advantages__wrapper {
   margin: 0 20px;
   max-width: 320px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     max-width: 768px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     max-width: 1440px;
     margin: 0;
     padding: 0 110px;
@@ -28,12 +28,12 @@
   margin-bottom: 40px;
   font-weight: 400;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -44,14 +44,14 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 154px;
     row-gap: 37px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     display: flex;
     // justify-content: space-between; при этом параметре 4 и текст вылезают за стакан
     gap: 94px;
@@ -65,7 +65,7 @@
   align-items: center;
   position: relative;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     display: block;
     margin: 0;
     padding: 40px 0 57px;
@@ -74,10 +74,9 @@
     box-sizing: border-box;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     margin-bottom: 175px;
   }
-
 }
 
 .advantages__image-leaf {
@@ -97,12 +96,12 @@
     top: 15px;
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-bottom: 31px;
     width: 80px;
     height: 80px;
 
-    &::before{
+    &::before {
       content: "1";
       font-family: "Oswald", sans-serif;
       width: 112px;
@@ -128,14 +127,6 @@
       top: 25px;
     }
   }
-
-
-  @media (min-width: $desktop-width){
-
-  }
-
-
-
 }
 
 .advantages__image-water {
@@ -154,12 +145,12 @@
     top: 15px;
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-bottom: 31px;
     width: 80px;
     height: 80px;
 
-    &::before{
+    &::before {
       content: "2";
       font-family: "Oswald", sans-serif;
       width: 112px;
@@ -184,10 +175,6 @@
       top: 25px;
     }
   }
-
-  @media (min-width: $desktop-width){
-
-  }
 }
 
 .advantages__image-eat {
@@ -206,12 +193,12 @@
     top: 15px;
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-bottom: 31px;
     width: 80px;
     height: 80px;
 
-    &::before{
+    &::before {
       content: "3";
       font-family: "Oswald", sans-serif;
       width: 112px;
@@ -236,12 +223,6 @@
       top: 25px;
     }
   }
-
-  @media (min-width: $desktop-width){
-
-  }
-
-
 }
 
 .advantages__image-clock {
@@ -260,12 +241,12 @@
     top: 15px;
   }
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-bottom: 31px;
     width: 80px;
     height: 80px;
 
-    &::before{
+    &::before {
       content: "4";
       font-family: "Oswald", sans-serif;
       width: 112px;
@@ -289,13 +270,7 @@
       left: 28px;
       top: 24px;
     }
-
   }
-
-  @media (min-width: $desktop-width){
-
-  }
-
 }
 
 .advantages__text {
@@ -303,14 +278,10 @@
   position: absolute;
   left: 80px;
 
-  @media (min-width: $tablet-width){
-    left: 0px;
+  @media (min-width: $tablet-width) {
+    left: 0;
     font-size: 16px;
     line-height: 24px;
     width: 242px;
-  }
-
-  @media (min-width: $desktop-width){
-
   }
 }
