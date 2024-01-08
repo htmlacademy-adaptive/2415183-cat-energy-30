@@ -1,10 +1,26 @@
 .hero-form {
   margin: 0;
-  padding: 27px 0 39px;
+
+  @media (min-width: $tablet-width){
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width){
+    max-width: 1440px;
+  }
+
 }
 
 .hero-form__wrapper{
   margin: 0 20px;
+
+  @media (min-width: $tablet-width){
+    margin: 0 70px;
+  }
+
+  @media (min-width: $desktop-width){
+    margin: 0 110px;
+  }
 }
 
 .hero-form__title {
@@ -12,15 +28,38 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  margin: 0 -20px;
   margin-bottom: 37px;
   padding-top: 27px;
   padding-left: 20px;
   border-top: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width){
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin: 0;
+    padding-top: 58px;
+    margin-bottom: 54px;
+    border: none;
+  }
+
+  @media (min-width: $tablet-width){
+    margin: 0;
+    margin-bottom: 55px;
+  }
 }
 
 .hero-form__text {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width){
+    max-width: 330px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 66px;
+  }
 }
