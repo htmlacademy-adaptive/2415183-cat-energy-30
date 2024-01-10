@@ -1,5 +1,5 @@
 .menu-nav {
-  @media (max-width: $mobile-width-only){
+  @media (max-width: $mobile-width-only) {
     // display: none;
     position: absolute;
     width: 320px;
@@ -8,15 +8,15 @@
   }
 }
 
-.menu-nav--opened{
+.menu-nav--opened {
   @media (max-width: $mobile-width-only) {
-  display: block;
+    display: block;
   }
 }
 
-  .menu-nav--closed{
+.menu-nav--closed {
   @media (max-width: $mobile-width-only) {
-  display: none;
+    display: none;
   }
 }
 
@@ -92,7 +92,6 @@
 }
 
 
-
 .menu-nav__list-link {
   text-decoration: none;
   color: #000000;
@@ -114,21 +113,19 @@
 }
 
 .menu-nav__list-link--current {
-
-  @media (min-width: $tablet-width){
-  border-bottom: 2px solid $green-basic;
-  padding-bottom: 8px;
-  padding-top: 10px;
-  box-sizing: content-box;
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $green-basic;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    box-sizing: content-box;
   }
 
-  @media (min-width: $desktop-width){
-  border-bottom: 2px solid $green-basic;
-  padding-bottom: 8px;
-  padding-top: 10px;
-  box-sizing: content-box;
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $green-basic;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    box-sizing: content-box;
   }
-
 }
 
 .menu-nav__list-link--current-index {
@@ -136,5 +133,4 @@
     border-color: #ffffff;
   }
 }
-
 
