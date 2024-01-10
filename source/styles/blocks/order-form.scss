@@ -495,15 +495,15 @@
   border: 1px solid #bababa;
 }
 
-.order-form__input-checkbox[type="checkbox"]:hover + .order-form__custom-checkbox-checkbo {
+.order-form__input-checkbox[type="checkbox"]:hover + .order-form__custom-checkbox-checkbox {
   border: 1px solid #bababa;
 }
 
-.order-form__input-checkbox[type="checkbox"]:checked:disabled + .order-form__custom-checkbo {
+.order-form__input-checkbox[type="checkbox"]:checked:disabled + .order-form__custom-checkbox {
   border: 1px solid #bababa;
 }
 
-.order-form__input-checkbox[type="checkbox"]:disabled + .order-form__custom-checkbo {
+.order-form__input-checkbox[type="checkbox"]:disabled + .order-form__custom-checkbox {
   opacity: 0.3;
 }
 
