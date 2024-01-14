@@ -28,7 +28,7 @@
 .order-form__parameters {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 6px;
   position: relative;
 
   @media (max-width: $mobile-width-only) {
@@ -38,7 +38,7 @@
       height: 1px;
       border-top: 1px solid #d9d9d9;
       margin: 0 -20px;
-      margin-top: 24px;
+      margin-top: 10px;
     }
   }
 
@@ -141,8 +141,8 @@
 .order-form__input[type="radio"] + .order-form__custom {
   display: inline-block;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
   margin: 0;
@@ -152,9 +152,9 @@
 
 .order-form__input[type="radio"]:checked + .order-form__custom {
   background-image: url("../../images/icons/stack.svg#radiobutton");
-  width: 40px;
-  height: 40px;
-  background-size: 18px 18px;
+  width: 30px;
+  height: 30px;
+  background-size: 14px 14px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -224,7 +224,7 @@
 }
 
 .order-form__owner-contacts {
-  padding: 26px 0 24px;
+  padding: 40px 0 19px;
 
   @media (min-width: $tablet-width) {
     padding: 65px 0;
@@ -246,7 +246,7 @@
   text-transform: none;
   align-self: center;
   margin: 0;
-  padding-right: 20px;
+  padding-right: 18px;
   position: relative;
   background-color: #ffffff;
   display: inline-block;
@@ -257,8 +257,8 @@
       width: 100vw;
       border: 1px solid #68b738;
       position: absolute;
-      top: 15px;
-      left: 10px;
+      top: 16px;
+      left: 17px;
       z-index: -1;
     }
   }
@@ -297,7 +297,7 @@
 .order-form__owner-contacts-items {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 6px;
   margin-top: 35px;
 
   @media (min-width: $tablet-width) {
@@ -413,6 +413,7 @@
   box-sizing: border-box;
   height: 150px;
   padding: 14px;
+  padding-top: 12px;
   font-size: 16px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
@@ -464,8 +465,8 @@
 }
 
 .order-form__custom-checkbox {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #cdcdcd;
   margin-right: 17px;
   box-sizing: border-box;
@@ -483,8 +484,8 @@
 
 .order-form__input-checkbox[type="checkbox"]:checked + .order-form__custom-checkbox {
   background-image: url("../../images/icons/stack.svg#checkbox");
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-size: 24px 18px;
   background-repeat: no-repeat;
   background-position: center;
@@ -515,6 +516,7 @@
   box-sizing: border-box;
   padding: 10px 44px;
   margin: 0;
+  margin-top: -3px;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -538,6 +540,7 @@
   max-width: 320px;
   font-family: $primary-font, sans-serif;
   line-height: 16px;
+  font-size: 14px;
   text-transform: none;
   color: #000000;
   text-align: center;
