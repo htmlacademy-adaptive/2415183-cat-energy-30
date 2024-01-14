@@ -69,12 +69,12 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
-    gap: 33px;
+    margin-top: -1px;
+    gap: 31px;
     font-size: 20px;
     line-height: 30px;
   }
 }
-
 
 .menu-nav__list-item {
   @media (max-width: $mobile-width-only) {
@@ -114,7 +114,7 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $green-basic;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
     padding-top: 10px;
     box-sizing: content-box;
   }

@@ -18,7 +18,7 @@
   @media (min-width: $desktop-width) {
     max-width: 1440px;
     margin: 0;
-    padding: 0 110px;
+    padding: 40px 110px 0;
   }
 }
 
@@ -58,8 +58,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    // justify-content: space-between; при этом параметре 4 и текст вылезают за стакан
-    gap: 94px;
+    gap: 95px;
   }
 }
 
@@ -80,7 +79,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 175px;
+    margin-bottom: 0;
   }
 }
 
