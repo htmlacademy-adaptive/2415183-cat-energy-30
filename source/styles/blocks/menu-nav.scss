@@ -59,10 +59,11 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 33px;
     font-size: 18px;
     line-height: 24px;
+    margin-right: 5px;
   }
 
   @media (min-width: $desktop-width) {
