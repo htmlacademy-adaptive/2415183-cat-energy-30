@@ -89,10 +89,12 @@
 .hero__selection-link {
   background-color: $green-basic;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
   display: block;
   max-width: calc(100% - 20px);
   box-sizing: border-box;
-  padding: 10px 44px;
+  padding: 10px 40px;
   margin: 0 20px;
   border: none;
 

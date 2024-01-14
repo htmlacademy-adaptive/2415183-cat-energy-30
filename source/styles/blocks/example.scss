@@ -74,6 +74,11 @@
 }
 
 .example__info-wrapper {
+  @media (max-width: $mobile-width-only) {
+    margin-top: -16px;
+
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 768px;
     display: flex;

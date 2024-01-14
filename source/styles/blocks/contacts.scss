@@ -36,9 +36,17 @@
   }
 }
 
+.contacts__text-container br {
+  display: none;
+  @media (max-width: $mobile-width-only){
+    display: inline;
+  }
+}
+
 .contacts__title {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   width: 50%;

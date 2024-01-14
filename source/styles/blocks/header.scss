@@ -17,9 +17,6 @@
     min-width: calc(1440px - 220px);
     justify-content: space-between;
     padding: 55px 110px 74px;
-    //   align-items: center;
-    //   position: absolute;
-    //   z-index: 1;
   }
 }
 
@@ -37,6 +34,7 @@
 
 .header__logo-wrapper {
   padding: 13px 20px;
+  padding-bottom: 9px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,7 +69,7 @@
   margin-left: auto;
   position: absolute;
   right: calc(100% - 300px);
-  top: 22px;
+  top: 16px;
 
   @media (min-width: $tablet-width) {
     display: none;
