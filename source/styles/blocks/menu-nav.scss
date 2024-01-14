@@ -60,10 +60,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: start;
-    gap: 33px;
+    gap: 34px;
     font-size: 18px;
     line-height: 24px;
-    margin-right: 5px;
+    margin-right: 1px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +107,7 @@
 .menu-nav__list-link--current {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $green-basic;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
     padding-top: 10px;
     box-sizing: content-box;
   }
