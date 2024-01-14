@@ -30,7 +30,7 @@
     box-sizing: border-box;
     position: absolute;
     left: 110px;
-    top: 95px;
+    top: 92px;
     background-color: #ffffff;
     z-index: 2;
     padding: 61px 70px 61px 80px;
@@ -89,6 +89,7 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
     height: 400px;
+    margin-top: 47px;
   }
 }
 
