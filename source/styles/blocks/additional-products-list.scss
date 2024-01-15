@@ -24,8 +24,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 895px;
-    padding: 15px 0 17px;
+    min-width: 915px;
+    padding: 14px 10px 17px;
     border: none;
     border-top: 1px solid #cdcdcd;
   }
@@ -70,6 +70,7 @@
     justify-content: space-between;
     margin: 0;
     margin-left: auto;
+    padding-top: 7px;
   }
 }
 
@@ -95,9 +96,9 @@
     margin-top: -1px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     min-width: 42px;
-    text-align: right;
+    text-align: left;
   }
 }
 

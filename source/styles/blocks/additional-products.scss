@@ -54,7 +54,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: -30px;
-    padding: 76px 40px 80px;
+    padding: 72px 40px 80px;
     background-color: #ffffff;
 
     &::after {
@@ -63,7 +63,7 @@
       height: 2px;
       border: 1px solid #68b738;
       position: absolute;
-      top: 100px;
+      top: 97px;
       left: -70px;
       z-index: -1;
     }
@@ -124,7 +124,9 @@
     padding-top: 186px;
     box-sizing: border-box;
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 3px;
+    margin-top: 1px;
+    margin-right: 9px;
 
     &::after {
       content: "";
@@ -161,5 +163,6 @@
   @media (min-width: $desktop-width) {
     top: 185px;
     right: 42px;
+    text-align: center;
   }
 }
