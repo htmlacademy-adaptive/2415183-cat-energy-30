@@ -5,12 +5,12 @@
 }
 
 .additional-products-list__item {
-  padding: 13px 0 19px;
+  padding: 12px 0 19px;
   border-top: 1px solid #cdcdcd;
 
   &:last-of-type {
     border-bottom: 1px solid #cdcdcd;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $tablet-width) {

@@ -30,6 +30,7 @@
     "optimize:raster": "gulp optimizeRaster",
     "optimize:vector": "gulp optimizeVector"
   },
+
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "2.0.8",
     "@linthtml/linthtml": "0.9.5",
