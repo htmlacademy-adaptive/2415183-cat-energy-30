@@ -37,7 +37,7 @@
     line-height: 36px;
     max-width: 340px;
     margin: 0;
-    padding: 70px 40px 80px;
+    padding: 68px 40px 80px;
     background-color: #ffffff;
 
     &::after {
@@ -100,6 +100,7 @@
     padding-top: 186px;
     box-sizing: border-box;
     position: relative;
+    margin-top: 70px;
     margin-bottom: 35px;
 
     &::after {
@@ -148,11 +149,12 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    text-align: left;
     width: 161px;
     min-height: 60px;
     position: absolute;
     top: 71px;
-    right: 120px;
+    right: 124px;
     padding: 0;
   }
 

@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 30px 28px;
+    padding: 25px 37px 27px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -43,6 +43,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +90,9 @@
   @media (min-width: $tablet-width) {
     min-width: 93px;
     text-align: right;
-    margin-left: 50px;
+    margin-left: 49px;
+    margin-right: 3px;
+    margin-top: -1px;
   }
 
   @media (min-width: $tablet-width) {
