@@ -28,8 +28,13 @@
   background-color: #f2f2f2;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 570px;
+    margin-bottom: 0;
   }
 }
 
@@ -47,7 +52,7 @@
     width: 200px;
     height: 200px;
     left: 445px;
-    top: 90px;
+    top: 91px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +107,7 @@
     width: 268px;
     height: 112px;
     left: 411px;
-    top: 133px;
+    top: 136px;
   }
 
   @media (min-width: $desktop-width) {
@@ -189,9 +194,25 @@
     line-height: 30px;
     margin-left: 53px;
     padding: 0;
-    padding-bottom: 69px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-bottom: 32px;
   }
 }
+
+.program__pro-link{
+  @media (min-width: $tablet-width){
+    margin-top: 31px;
+  }
+  @media (min-width: $desktop-width){
+    margin-top: 0;
+    margin-bottom: 30px;
+
+  }
+}
+
 
 .program__item-arrow {
   display: inline-block;
@@ -199,20 +220,13 @@
   width: 145px;
   height: 30px;
   background-image: url("../../images/icons/stack.svg#icon-arrow-short");
-  background-size: 32px 10px;
+  background-size: 44px 12px;
   background-position: center right;
   background-repeat: no-repeat;
-  left: 8px;
-  bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    left: 15px;
-    bottom: 68px;
-  }
 
   &:hover {
     background-image: url("../../images/icons/icon-arrow-long.svg");
-    background-size: 32px 10px;
+    background-size: 44px 12px;
     background-repeat: no-repeat;
     position: absolute;
     left: 5px;
@@ -227,7 +241,7 @@
   &:active {
     background-image: url("../../images/icons/icon-arrow-long.svg");
     opacity: 0.3;
-    background-size: 32px 10px;
+    background-size: 44px 12px;
     background-repeat: no-repeat;
     position: absolute;
     left: 5px;
@@ -236,6 +250,76 @@
     @media (min-width: $tablet-width) {
       left: 15px;
       bottom: 55px;
+    }
+  }
+}
+
+.program__item-arrow--slim{
+  left: 16px;
+  bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    left: 25px;
+    bottom: 56px;
+
+    &:hover {
+      left: 25px;
+      bottom: 56px;
+    }
+
+    &:active {
+      left: 25px;
+      bottom: 56px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 25px;
+    bottom: 31px;
+
+    &:hover {
+      left: 25px;
+      bottom: 31px;
+    }
+
+    &:active {
+      left: 25px;
+      bottom: 31px;
+    }
+  }
+}
+
+.program__item-arrow--pro{
+  left: 11px;
+  bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    left: 21px;
+    bottom: 58px;
+
+    &:hover {
+      left: 21px;
+      bottom: 58px;
+    }
+
+    &:active{
+      left: 21px;
+      bottom: 58px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 21px;
+    bottom: 31px;
+
+    &:hover {
+      left: 21px;
+      bottom: 31px;
+    }
+
+    &:active{
+      left: 21px;
+      bottom: 31px;
     }
   }
 }
