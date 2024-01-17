@@ -11,14 +11,15 @@
 }
 
 .hero-form__wrapper {
-  margin: 0 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     margin: 0 70px;
+    margin-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    margin: 130px 110px 0;
   }
 }
 
@@ -28,7 +29,6 @@
   font-weight: 400;
   line-height: 36px;
   margin-bottom: 37px;
-  padding-top: 27px;
   padding-left: 20px;
   border-top: 1px solid #e7e7e7;
 
@@ -51,8 +51,19 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   margin: 0;
+  padding: 0 20px 35px;
+  max-width: 250px;
 
   @media (min-width: $tablet-width) {
+    max-width: 330px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
     max-width: 330px;
     font-size: 20px;
     line-height: 30px;

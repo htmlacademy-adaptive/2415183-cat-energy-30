@@ -11,6 +11,7 @@
   @media (min-width: $tablet-width) {
     max-width: 768px;
     margin: 0 30px;
+    margin-top: -22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,8 +28,13 @@
   background-color: #f2f2f2;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 570px;
+    margin-bottom: 0;
   }
 }
 
@@ -45,8 +51,8 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
-    left: 455px;
-    top: 85px;
+    left: 445px;
+    top: 91px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,6 +60,13 @@
     height: 100px;
     left: 52px;
     top: 47px;
+  }
+}
+
+.program__item-slim {
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+    margin-bottom: 24px;
   }
 }
 
@@ -69,8 +82,8 @@
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
-    left: 487px;
-    top: 73px;
+    left: 476px;
+    top: 79px;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,15 +106,15 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
-    left: 421px;
-    top: 126px;
+    left: 411px;
+    top: 136px;
   }
 
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 56px;
     left: 35px;
-    top: 70px;
+    top: 66px;
   }
 }
 
@@ -133,7 +146,7 @@
 
 .program__text {
   margin: 0;
-  margin-top: 22px;
+  margin-top: 30px;
   margin-bottom: 15px;
   margin-left: 20px;
   margin-right: 20px;
@@ -146,6 +159,8 @@
     max-width: 340px;
     margin-left: 53px;
     border: unset;
+    margin-top: 25px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -154,6 +169,7 @@
     max-width: 457px;
     margin-left: 52px;
     margin-top: 73px;
+    margin-bottom: 3px;
     border: unset;
   }
 }
@@ -168,7 +184,7 @@
   font-size: 16px;
   line-height: 16px;
   margin: 0;
-  padding: 0 20px 18px;
+  padding: 4px 20px 18px;
   box-sizing: border-box;
   display: block;
   position: relative;
@@ -180,7 +196,23 @@
     padding: 0;
     padding-bottom: 57px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 32px;
+  }
 }
+
+.program__pro-link {
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
 
 .program__item-arrow {
   display: inline-block;
@@ -188,23 +220,16 @@
   width: 145px;
   height: 30px;
   background-image: url("../../images/icons/stack.svg#icon-arrow-short");
-  background-size: 32px 10px;
+  background-size: 44px 12px;
   background-position: center right;
   background-repeat: no-repeat;
-  left: 15px;
-  bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    left: 15px;
-    bottom: 55px;
-  }
 
   &:hover {
     background-image: url("../../images/icons/icon-arrow-long.svg");
-    background-size: 32px 10px;
+    background-size: 44px 12px;
     background-repeat: no-repeat;
     position: absolute;
-    left: 15px;
+    left: 5px;
     bottom: 10px;
 
     @media (min-width: $tablet-width) {
@@ -216,15 +241,85 @@
   &:active {
     background-image: url("../../images/icons/icon-arrow-long.svg");
     opacity: 0.3;
-    background-size: 32px 10px;
+    background-size: 44px 12px;
     background-repeat: no-repeat;
     position: absolute;
-    left: 15px;
+    left: 5px;
     bottom: 10px;
 
     @media (min-width: $tablet-width) {
       left: 15px;
       bottom: 55px;
+    }
+  }
+}
+
+.program__item-arrow--slim {
+  left: 16px;
+  bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    left: 25px;
+    bottom: 56px;
+
+    &:hover {
+      left: 25px;
+      bottom: 56px;
+    }
+
+    &:active {
+      left: 25px;
+      bottom: 56px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 25px;
+    bottom: 31px;
+
+    &:hover {
+      left: 25px;
+      bottom: 31px;
+    }
+
+    &:active {
+      left: 25px;
+      bottom: 31px;
+    }
+  }
+}
+
+.program__item-arrow--pro {
+  left: 11px;
+  bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    left: 21px;
+    bottom: 58px;
+
+    &:hover {
+      left: 21px;
+      bottom: 58px;
+    }
+
+    &:active {
+      left: 21px;
+      bottom: 58px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 21px;
+    bottom: 31px;
+
+    &:hover {
+      left: 21px;
+      bottom: 31px;
+    }
+
+    &:active {
+      left: 21px;
+      bottom: 31px;
     }
   }
 }
