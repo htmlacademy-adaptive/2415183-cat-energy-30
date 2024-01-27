@@ -121,9 +121,23 @@
 }
 
 .hero__picture-wrapper {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 145px;
+      left: 557px;
+  }
+}
+
+.hero__product-image{
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: $tablet-width){
+    width: 709px;
+    height: 609px;
+  }
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 145px;
-    left: 557px;
+    width: 552px;
+    height: 652px;
   }
 }

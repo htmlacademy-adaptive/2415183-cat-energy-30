@@ -85,7 +85,7 @@
                 <div class="order-form__parameters-item">
                   <label class="order-form__label" for="cat-name">Имя:*</label>
                   <input
-                    class="order-form__input input"
+                    class="order-form__input order-form__input--error"
                     type="text" name="Имя кота"
                     id="cat-name"
                     placeholder="Укажите имя"
@@ -96,7 +96,7 @@
                 <div class="order-form__parameters-item">
                   <label class="order-form__label" for="cat-weight">Вес (кг):*</label>
                   <input
-                    class="order-form__input input"
+                    class="order-form__input"
                     type="number"
                     name="Вес кота"
                     id="cat-weight"
@@ -108,7 +108,7 @@
                 <div class="order-form__parameters-item">
                   <label class="order-form__label" for="cat-age">Возраст (лет):</label>
                   <input
-                    class="order-form__input input"
+                    class="order-form__input"
                     type="number"
                     name="Возраст кота"
                     id="cat-age"
@@ -128,7 +128,7 @@
                   </li>
                   <li>
                     <label class="order-form__label" for="weight-gain"><!--Набор массы-->
-                      <input class="order-form__input visually-hidden" type="radio" name="программа питания" id="weight-gain" value="Набор массы">
+                      <input class="order-form__input visually-hidden" type="radio" name="программа питания" id="weight-gain" value="Набор массы" disabled>
                       <span class="order-form__custom"></span>
                       <span class="order-form__label-text">Набор массы</span>
                     </label>
@@ -147,9 +147,9 @@
               <h2 class="order-form__title title">Контактные данные (владельца кота)</h2>
               <div class="order-form__owner-contacts-items">
                 <div class="order-form__owner-contacts-item">
-                  <label class="order-form__label order-form__label--mail" for="owner-e-mail">e-mail:*</label>
+                  <label class="order-form__label order-form__label--mail order-form__label--mail-error" for="owner-e-mail">e-mail:*</label>
                   <input
-                    class="order-form__e-mail input"
+                    class="order-form__e-mail order-form__e-mail--error"
                     name="e-mail"
                     id="owner-e-mail"
                     type="email"
@@ -161,7 +161,7 @@
                 <div class="order-form__owner-contacts-item">
                   <label class="order-form__label order-form__label--phone" for="owner-tel">Телефон:*</label>
                   <input
-                    class="order-form__tel input"
+                    class="order-form__tel"
                     name="телефон"
                     id="owner-tel"
                     type="tel"
@@ -175,7 +175,7 @@
             <div class="order-form__comment">
               <h2 class="order-form__title title">Комментарий</h2>
               <p class="visually-hidden">Расскажите обо всех повадках кота</p>
-              <textarea class="order-form__comment-textarea input" name="комментарий">Расскажите обо всех повадках кота</textarea>
+              <textarea class="order-form__comment-textarea" name="комментарий">Расскажите обо всех повадках кота</textarea>
             </div>
             <div class="order-form__extra">
               <h2 class="order-form__title title">Дополнительно</h2>
