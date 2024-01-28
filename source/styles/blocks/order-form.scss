@@ -62,7 +62,6 @@
 .order-form__label {
   display: flex;
   align-items: center;
-  // не получаетсчя сделать прозрачность при disabled
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -70,15 +69,10 @@
   }
 }
 
-.order-form__label--disabled{
+.order-form__input:disabled ~ .order-form__label-text,
+.order-form__input-checkbox:disabled ~ .order-form__label-text {
   opacity: 0.3;
 }
-
-// .order-form__label--desktop-additional{
-//   @media (min-width: $desktop-width){
-//     width: 325px;
-//   }
-// }
 
 .order-form__label--desktop-additional-sugar {
   @media (min-width: $desktop-width) {
@@ -122,7 +116,7 @@
   }
 }
 
-.order-form__input--error{
+.order-form__input--error {
   border: 1px solid #ff8282;
 }
 
@@ -356,6 +350,34 @@
   }
 }
 
+.order-form__owner-contacts-item--email:focus-within label::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/icons/stack.svg#icon-mail-focus");
+  background-size: 20px 20px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.order-form__owner-contacts-item--tel:focus-within label::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/icons/stack.svg#icon-phone-focus");
+  background-size: 20px 20px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
 .order-form__e-mail,
 .order-form__tel {
   flex-grow: 1;
@@ -375,28 +397,6 @@
 
   &:focus {
     border: 2px solid #444444;
-
-      // &::after{
-      //   content: "";
-      //   display: block;
-      //   position: absolute;
-      //   width: 20px;
-      //   height: 20px;
-      //   background-image: url("../../images/icons/stack.svg#icon-mail-focus");
-      //   background-size: 20px 20px;
-      //   right: 12px;
-      //   top: 50%;
-      //   transform: translateY(-50%);
-      //   z-index: 1;
-
-      //   @media (min-width: $tablet-width) {
-      //     right: 14px;
-      //   }
-
-      //   @media (min-width: $desktop-width) {
-      //     right: 13px;
-      //   }
-      // }
   }
 
   &:invalid {
@@ -415,7 +415,7 @@
 }
 
 .order-form__e-mail--error,
-.order-form__tel--error{
+.order-form__tel--error {
   border: 2px solid #ff8282;
 }
 
@@ -444,18 +444,6 @@
   transform: translateY(-50%);
   z-index: 1;
 
-  // &:focus{
-  //   display: block;
-  //   position: absolute;
-  //   width: 20px;
-  //   height: 20px;
-  //   background-image: url("../../images/icons/stack.svg#icon-mail-focus");
-  //   background-size: 20px 20px;
-  //   right: 12px;
-  //   top: 50%;
-  //   z-index: 2;
-  // }
-
   @media (min-width: $tablet-width) {
     right: 14px;
   }
@@ -465,7 +453,23 @@
   }
 }
 
-.order-form__label--mail-error::after{
+
+// .order-form__e-mail:focus + .order-form__label--mail::after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   width: 20px;
+//   height: 20px;
+//   background-image: url("../../images/icons/stack.svg#icon-mail-focus");
+//   background-size: 20px 20px;
+//   right: 12px;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   z-index: 1;
+// }
+
+
+.order-form__label--mail-error::after {
   content: "";
   display: block;
   position: absolute;
@@ -509,7 +513,7 @@
   }
 }
 
-.order-form__label--phone-error::after{
+.order-form__label--phone-error::after {
   content: "";
   display: block;
   position: absolute;
@@ -637,15 +641,15 @@
   border: 1px solid #bababa;
 }
 
-.order-form__input-checkbox[type="checkbox"]:hover + .order-form__custom-checkbox-checkbo {
+.order-form__input-checkbox[type="checkbox"]:hover + .order-form__custom-checkbox-checkbox {
   border: 1px solid #bababa;
 }
 
-.order-form__input-checkbox[type="checkbox"]:checked:disabled + .order-form__custom-checkbo {
+.order-form__input-checkbox[type="checkbox"]:checked:disabled + .order-form__custom-checkbox {
   border: 1px solid #bababa;
 }
 
-.order-form__input-checkbox[type="checkbox"]:disabled + .order-form__custom-checkbo {
+.order-form__input-checkbox[type="checkbox"]:disabled + .order-form__custom-checkbox {
   opacity: 0.3;
 }
 

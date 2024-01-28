@@ -31,14 +31,6 @@
   border: none;
   box-sizing: content-box;
 
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -46,6 +38,13 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.menu-nav__toggle-close:hover line{
+  stroke: #666666;
+}
+.menu-nav__toggle-close:active line{
+  stroke: #b3b3b3;
 }
 
 .menu-nav__list {
@@ -126,4 +125,9 @@
   @media (min-width: $desktop-width) {
     border-color: #ffffff;
   }
+}
+
+.menu-nav--no-js{
+  display: block;
+  position: relative;
 }

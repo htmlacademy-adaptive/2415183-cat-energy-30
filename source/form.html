@@ -43,9 +43,12 @@
           <nav class="menu-nav menu-nav--closed menu-nav--no-js">
             <button class="menu-nav__toggle-close" type="button">
               <span class="visually-hidden">Закрыть меню.</span>
-              <svg width="23" height="23">
-                <use href="images\icons\stack.svg#nav-burger-close"></use>
-              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Logo_mobile">
+                <line id="Line 15" y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
+                <line id="Line 17" y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
+                </g>
+                </svg>
             </button>
             <ul class="menu-nav__list">
               <li class="menu-nav__list-item">
@@ -127,14 +130,14 @@
                     </label>
                   </li>
                   <li>
-                    <label class="order-form__label" for="weight-gain"><!--Набор массы-->
+                    <label class="order-form__label" for="weight-gain" ><!--Набор массы-->
                       <input class="order-form__input visually-hidden" type="radio" name="программа питания" id="weight-gain" value="Набор массы" disabled>
                       <span class="order-form__custom"></span>
                       <span class="order-form__label-text">Набор массы</span>
                     </label>
                   </li>
                   <li>
-                    <label class="order-form__label" for="idk"><!--Не знаю (нужен ваш совет)-->
+                    <label class="order-form__label " for="idk"><!--Не знаю (нужен ваш совет)-->
                       <input class="order-form__input visually-hidden" type="radio" name="программа питания" id="idk" value="Не знаю (нужен ваш совет)">
                       <span class="order-form__custom"></span>
                       <span class="order-form__label-text">Не знаю (нужен ваш совет)</span>
@@ -146,10 +149,10 @@
             <div class="order-form__owner-contacts">
               <h2 class="order-form__title title">Контактные данные (владельца кота)</h2>
               <div class="order-form__owner-contacts-items">
-                <div class="order-form__owner-contacts-item">
-                  <label class="order-form__label order-form__label--mail order-form__label--mail-error" for="owner-e-mail">e-mail:*</label>
+                <div class="order-form__owner-contacts-item order-form__owner-contacts-item--email">
+                  <label class="order-form__label order-form__label--mail" for="owner-e-mail">e-mail:*</label>
                   <input
-                    class="order-form__e-mail order-form__e-mail--error"
+                    class="order-form__e-mail"
                     name="e-mail"
                     id="owner-e-mail"
                     type="email"
@@ -158,7 +161,7 @@
                     required
                   />
                 </div>
-                <div class="order-form__owner-contacts-item">
+                <div class="order-form__owner-contacts-item order-form__owner-contacts-item--tel">
                   <label class="order-form__label order-form__label--phone" for="owner-tel">Телефон:*</label>
                   <input
                     class="order-form__tel"
@@ -184,28 +187,28 @@
                   <label class="order-form__label order-form__label--desktop-additional-sugar" for="sugar-substitude"><!--Сахарозаменитель-->
                     <input class="order-form__input-checkbox visually-hidden" type="checkbox" name="Сахарозаменитель" id="sugar-substitude" checked>
                     <span class="order-form__custom-checkbox"></span>
-                    <span class="order-form-label-text">Сахарозаменитель</span>
+                    <span class="order-form__label-text">Сахарозаменитель</span>
                   </label>
                 </li>
                 <li>
                   <label class="order-form__label order-form__label--desktop-additional-water" for="water"><!--Питьевая вода-->
                     <input class="order-form__input-checkbox visually-hidden" type="checkbox" name="Питьевая вода" id="water" >
                     <span class="order-form__custom-checkbox"></span>
-                    <span class="order-form-label-text">Питьевая вода</span>
+                    <span class="order-form__label-text">Питьевая вода</span>
                   </label>
                 </li>
                 <li>
                   <label class="order-form__label order-form__label--desktop-additional-milk" for="milk"><!--Молоко-->
                     <input class="order-form__input-checkbox visually-hidden" type="checkbox" name="Молоко" id="milk">
                     <span class="order-form__custom-checkbox"></span>
-                    <span class="order-form-label-text">Молоко</span>
+                    <span class="order-form__label-text">Молоко</span>
                   </label>
                 </li>
                 <li>
                   <label class="order-form__label order-form__label--desktop-additional-vitamins" for="vitamins"><!--Витамины-->
                     <input class="order-form__input-checkbox visually-hidden" type="checkbox" name="Витамины" id="vitamins">
                     <span class="order-form__custom-checkbox"></span>
-                    <span class="order-form-label-text">Витамины</span>
+                    <span class="order-form__label-text">Витамины</span>
                   </label>
                 </li>
               </ul>
@@ -276,7 +279,7 @@
               </svg>
             </a>
           </div>
-          <a class="footer__copyright" href="#">
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="footer__copyright-text">HTML Academy</span>
             <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0-83854-420)">
@@ -288,7 +291,7 @@
               </clippath>
               </defs>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </footer>

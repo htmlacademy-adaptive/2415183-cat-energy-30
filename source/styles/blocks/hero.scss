@@ -2,14 +2,35 @@
   font-family: "Oswald", sans-serif;
   color: #ffffff;
   text-align: center;
+}
+
+
+.hero__wrapper{
   background-image: url("../../images/index/mobile-hero-background@1x.png");
-  max-width: 320px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center top;
+  min-width: 320px;
   padding: 27px 0 20px;
   margin: 0;
   position: relative;
+
+// зеленый фон на всю ширину
+  @media (max-width: $mobile-width-only){
+    &::before{
+      content: "";
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 200vw;
+      height: 302px;
+      background-color: #62A63A;
+      position:absolute;
+      z-index: -1;
+      top: 0;
+      left: -100vw;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     background-image: unset;
@@ -18,7 +39,7 @@
 
   @media (min-width: $desktop-width) {
     background: url("../../images/index/desktop-hero-background@1x.png") right center no-repeat, transparent left center no-repeat;
-    max-width: 1440px;
+    min-width: 1440px;
     background-position: 720px 0;
     padding: 1px 0;
   }
@@ -121,21 +142,22 @@
 }
 
 .hero__picture-wrapper {
-    @media (min-width: $desktop-width) {
-      position: absolute;
-      top: 145px;
-      left: 557px;
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 145px;
+    left: 557px;
   }
 }
 
-.hero__product-image{
+.hero__product-image {
   width: 280px;
   height: 270px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
   }
+
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 652px;

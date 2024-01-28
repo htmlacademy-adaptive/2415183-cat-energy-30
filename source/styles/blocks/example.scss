@@ -22,7 +22,12 @@
 
 .example__wrapper {
   margin: 0;
+  padding: 0;
   max-width: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
 
   @media (min-width: $tablet-width) {
     max-width: 708px;
@@ -159,7 +164,7 @@
     min-width: 138px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     background-color: #eaeaea;
   }
 }
