@@ -5,7 +5,7 @@
 }
 
 
-.hero__wrapper{
+.hero__wrapper {
   background-image: url("../../images/index/mobile-hero-background@1x.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -15,17 +15,17 @@
   margin: 0;
   position: relative;
 
-// зеленый фон на всю ширину
-  @media (max-width: $mobile-width-only){
-    &::before{
+  // зеленый фон на всю ширину
+  @media (max-width: $mobile-width-only) {
+    &::before {
       content: "";
       display: block;
       margin: 0;
       padding: 0;
       width: 200vw;
       height: 302px;
-      background-color: #62A63A;
-      position:absolute;
+      background-color: #62a63a;
+      position: absolute;
       z-index: -1;
       top: 0;
       left: -100vw;
@@ -144,7 +144,7 @@
 .hero__picture-wrapper {
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 145px;
+    top: 65px;
     left: 557px;
   }
 }

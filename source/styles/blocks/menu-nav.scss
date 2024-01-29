@@ -40,10 +40,11 @@
   }
 }
 
-.menu-nav__toggle-close:hover line{
+.menu-nav__toggle-close:hover line {
   stroke: #666666;
 }
-.menu-nav__toggle-close:active line{
+
+.menu-nav__toggle-close:active line {
   stroke: #b3b3b3;
 }
 
@@ -64,16 +65,23 @@
     font-size: 18px;
     line-height: 24px;
     margin-right: 3px;
+    flex-wrap: wrap;
+    margin-left: 94px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: start;
     margin-top: -1px;
     gap: 34px;
     font-size: 20px;
     line-height: 30px;
-    margin-right: 1px;
+    margin-right: 0;
+    max-width: 50%;
+    min-width: 478px;
+    margin-left: 0;
   }
 }
 
@@ -127,7 +135,7 @@
   }
 }
 
-.menu-nav--no-js{
+.menu-nav--no-js {
   display: block;
   position: relative;
 }

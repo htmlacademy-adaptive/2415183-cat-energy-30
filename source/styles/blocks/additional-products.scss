@@ -74,7 +74,8 @@
 .additional-products__advertising {
   width: 100%;
   min-height: 290px;
-  background-image: image-set(
+  background-image:
+ image-set(
   url("../../images/catalog/mobile-gift-background@1x.webp") type("image/webp") 1x,
   url("../../images/catalog/mobile-gift-background@2x.webp") type("image/webp") 2x,
   url("../../images/catalog/mobile-gift-background@1x.png") type("image/png") 1x,
@@ -101,7 +102,8 @@
   @media (min-width: $tablet-width) {
     width: 707px;
     min-height: 200px;
-    background-image: image-set(
+    background-image:
+ image-set(
       url("../../images/catalog/tablet-gift-background@1x.webp") type("image/webp") 1x,
       url("../../images/catalog/tablet-gift-background@2x.webp") type("image/webp") 2x,
       url("../../images/catalog/tablet-gift-background@1x.png") type("image/png") 1x,
@@ -129,7 +131,8 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 288px;
-    background-image: image-set(
+    background-image:
+ image-set(
       url("../../images/catalog/desktop-gift-background@1x.webp") type("image/webp") 1x,
       url("../../images/catalog/desktop-gift-background@2x.webp") type("image/webp") 2x,
       url("../../images/catalog/desktop-gift-background@1x.png") type("image/png") 1x,
