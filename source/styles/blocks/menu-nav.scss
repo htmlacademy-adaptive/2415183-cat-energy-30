@@ -5,6 +5,10 @@
     z-index: 2;
     background-color: #ffffff;
   }
+
+  @media (min-width: $desktop-width){
+    width: calc(50% + 55px);
+  }
 }
 
 .menu-nav--opened {
@@ -73,14 +77,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: end;
     margin-top: -1px;
     gap: 34px;
     font-size: 20px;
     line-height: 30px;
     margin-right: 0;
-    max-width: 50%;
-    min-width: 478px;
     margin-left: 0;
   }
 }

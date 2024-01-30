@@ -1,13 +1,7 @@
 .contacts {
   margin: 0;
-  max-width: 320px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 768px;
-  }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
     position: relative;
   }
 }
@@ -15,25 +9,23 @@
 .contacts__text-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
   padding: 26px 0;
 
   @media (min-width: $tablet-width) {
-    max-width: 708px;
     margin: 0;
-    margin-top: 0;
-    padding: 61px 70px;
+    padding: 61px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 565px;
     box-sizing: border-box;
     position: absolute;
+    min-width: 565px;
     left: 110px;
     top: 95px;
     background-color: #ffffff;
     z-index: 2;
     padding: 61px 70px 61px 80px;
+    justify-content: space-between;
   }
 }
 
@@ -105,17 +97,18 @@
   background-position: center;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    height: 400px;
+    width: 100%;
+    min-height: 400px;
     background-image: url("../../images/location-tablet@2x.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
     height: 400px;
+    width: 100%;
     background-image: url("../../images/location-desktop@2x.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -123,38 +116,14 @@
   }
 }
 
-// .contacts__map-widget--form{
-//   @media (min-width: $tablet-width) {
-//     width: 1440px;
-//     height: 400px;
-//     margin-top: 48px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     width: 1440px;
-//     height: 400px;
-//     margin-top: 48px;
-//   }
-// }
-
-// .contacts__map-widget--catalog{
-//   @media (min-width: $desktop-width) {
-//     width: 1440px;
-//     height: 400px;
-//     margin-top: 55px;
-//   }
-// }
 
 .contacts__map-widget iframe {
   border: none;
+  width: 100%;
+  min-height: 362px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    height: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
+    width: 100%;
     height: 400px;
   }
 }
