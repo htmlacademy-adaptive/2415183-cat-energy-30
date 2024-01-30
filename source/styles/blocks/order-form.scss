@@ -16,6 +16,7 @@
   @media (min-width: $tablet-width) {
     margin-right: 40px;
   }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -165,17 +166,15 @@
   margin-bottom: 13px;
   padding: 0;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-bottom: 14px;
   }
 }
 
-.order-form__program-type-list li:last-of-type{
-
-  @media (min-width: $tablet-width){
-  margin-bottom: 10px;
-}
-
+.order-form__program-type-list li:last-of-type {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .order-form__input[type="radio"] + .order-form__custom {
@@ -345,8 +344,8 @@
 }
 
 .order-form__title--comment,
-.order-form__title--extra{
-    @media (min-width: $desktop-width){
+.order-form__title--extra {
+  @media (min-width: $desktop-width) {
     max-width: 600px;
     font-size: 36px;
     line-height: 36px;
@@ -361,15 +360,15 @@
     display: inline-block;
     padding: 0 40px;
 
-      &::after {
-        content: "";
-        width: 1440px;
-        border: 2px solid #68b738;
-        position: absolute;
-        top: 18px;
-        left: -70px;
-        z-index: -1;
-      }
+    &::after {
+      content: "";
+      width: 1440px;
+      border: 2px solid #68b738;
+      position: absolute;
+      top: 18px;
+      left: -70px;
+      z-index: -1;
+    }
   }
 }
 
@@ -426,8 +425,8 @@
   z-index: 1;
 }
 
-.order-form__owner-contacts-item--tel{
-  @media (min-width: $desktop-width){
+.order-form__owner-contacts-item--tel {
+  @media (min-width: $desktop-width) {
     margin-right: 0;
   }
 }
@@ -479,7 +478,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 11px 20px;
-
   }
 }
 

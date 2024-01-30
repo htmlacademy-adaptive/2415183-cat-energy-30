@@ -5,7 +5,7 @@
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
-    background: linear-gradient(to bottom,#62a63a 302px, #ffffff 302px,  #ffffff 100%)
+    background: linear-gradient(to bottom, #62a63a 302px, #ffffff 302px, #ffffff 100%);
   }
 }
 
@@ -32,7 +32,7 @@
     position: relative;
     // margin-bottom: 40px;
 
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       right: 0;
