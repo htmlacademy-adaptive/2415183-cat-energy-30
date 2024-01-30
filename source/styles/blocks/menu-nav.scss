@@ -1,7 +1,8 @@
 .menu-nav {
   @media (max-width: $mobile-width-only) {
     position: absolute;
-    width: 320px;
+    min-width: 320px;
+    left: -20px;
     z-index: 2;
     background-color: #ffffff;
   }
@@ -28,7 +29,7 @@
   background-size: 30px 30px;
   background-color: #ffffff;
   right: 14px;
-  top: -49px;
+  top: -48px;
   width: 23px;
   height: 23px;
   padding: 4px;
