@@ -1,5 +1,6 @@
 .footer {
   padding: 40px 0;
+  padding-bottom: 20px;
   background-color: #f2f2f2;
   margin: 0;
 
@@ -19,16 +20,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 66px 0;
-  }
-}
-
-.logo__link-text--footer {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
   }
 }
 

@@ -155,7 +155,7 @@
   margin-top: 21px;
   display: flex;
   justify-content: center;
-  background-color: $green-basic;
+  background-color: #68b738;
 
   @media (min-width: $tablet-width) {
     margin-top: 31px;
@@ -213,7 +213,7 @@
       height: 60px;
       background-size: 60px 60px;
       background-repeat: no-repeat;
-      top: -110px; //толще, чем надо
+      top: -110px;
       left: 69px;
     }
 

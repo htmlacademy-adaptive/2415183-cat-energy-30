@@ -118,14 +118,14 @@
 
 .menu-nav__list-link--current {
   @media (min-width: $tablet-width) {
-    border-bottom: 2px solid $green-basic;
+    border-bottom: 2px solid #68b738;
     padding-bottom: 6px;
     padding-top: 10px;
     box-sizing: content-box;
   }
 
   @media (min-width: $desktop-width) {
-    border-bottom: 2px solid $green-basic;
+    border-bottom: 2px solid #68b738;
     padding-bottom: 6px;
     padding-top: 10px;
     box-sizing: content-box;

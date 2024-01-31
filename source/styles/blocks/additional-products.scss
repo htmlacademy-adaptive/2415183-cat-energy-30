@@ -17,16 +17,19 @@
   font-weight: 400;
   position: relative;
   margin: 0;
-  padding: 22px 0 36px;
+  padding: 22px 20px 36px 0;
+  background-color: #ffffff;
+  box-sizing: content-box;
 
 
   &::after {
     content: "";
-    width: 54px;
+    width: 50vw;
     border: 1px solid #68b738;
     position: absolute;
     top: 38px;
-    right: -20px;
+    left: 245px;
+    z-index: 1;
   }
 
   @media (min-width: $tablet-width) {
@@ -39,12 +42,12 @@
 
     &::after {
       content: "";
-      width: 768px;
+      width: 150vw;
       height: 2px;
       border: 1px solid #68b738;
       position: absolute;
       top: 91px;
-      left: -30px;
+      left: -26vw;
       z-index: -1;
     }
   }
@@ -56,12 +59,12 @@
 
     &::after {
       content: "";
-      width: 1440px;
+      width: 300vw;
       height: 2px;
       border: 1px solid #68b738;
       position: absolute;
       top: 97px;
-      left: -70px;
+      left: -40vw;
       z-index: -1;
     }
   }

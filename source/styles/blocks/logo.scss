@@ -14,6 +14,11 @@
     background-color: transparent;
     fill: #6b6b6b;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .logo__link-img {
@@ -35,3 +40,5 @@
     margin-left: 14px;
   }
 }
+
+

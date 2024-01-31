@@ -30,7 +30,6 @@
     padding: 1px 0;
     box-sizing: border-box;
     position: relative;
-    // margin-bottom: 40px;
 
     &::after {
       content: "";
@@ -111,7 +110,7 @@
 }
 
 .hero__selection-link {
-  background-color: $green-basic;
+  background-color: #68b738;
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
