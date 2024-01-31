@@ -298,11 +298,12 @@
   @media (max-width: $mobile-width-only) {
     &::after {
       content: "";
-      width: 100vw;
+      width: 100%;
       border: 1px solid #68b738;
       position: absolute;
       top: 16px;
-      left: 17px;
+      right: 0;
+      transform: translateX(100%);
       z-index: -1;
     }
   }
@@ -315,7 +316,7 @@
 
     &::after {
       content: "";
-      width: 150vw;
+      width: 100%;
       border: 2px solid #68b738;
       position: absolute;
       top: 21px;
@@ -327,7 +328,7 @@
   @media (min-width: $desktop-width) {
     &::after {
       content: "";
-      width: 1300vw;
+      width: 100%;
       border: 2px solid #68b738;
       position: absolute;
       top: 18px;

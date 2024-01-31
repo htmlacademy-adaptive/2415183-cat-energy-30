@@ -8,20 +8,21 @@
     "link link";
   padding-top: 20px;
   padding-bottom: 46px;
-  box-sizing: border-box;
+  box-sizing: content-box;
   position: relative;
-  margin: 0;
+  margin: 0 auto;
 
   @media (max-width: $mobile-width-only) {
-    &::after {
+    &::before {
       display: block;
       content: "";
-      width: calc(100% + 40px);
+      width: 100%;
       border-bottom: 1px solid #ebebeb;
       position: absolute;
       bottom: 0;
-      margin: 0 -20px;
+      margin: 0 ;
     }
+
   }
 
   @media (min-width: $tablet-width) {

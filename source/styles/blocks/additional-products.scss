@@ -1,4 +1,4 @@
-.additional-products-wrapper {
+.additional-products__wrapper {
   padding: 0;
 
   @media (min-width: $desktop-width) {
@@ -10,6 +10,48 @@
   }
 }
 
+.additional-products__subtitle-wrapper{
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &::after {
+    content: "";
+    width: 50%;
+    border: 1px solid #68b738;
+    position: absolute;
+    top: 38px;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width){
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      border: 1px solid #68b738;
+      position: absolute;
+      top: 91px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      border: 1px solid #68b738;
+      position: absolute;
+      top: 95px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+
 .additional-products__subtitle {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -17,20 +59,11 @@
   font-weight: 400;
   position: relative;
   margin: 0;
+  margin-left: 0px;
   padding: 22px 20px 36px 0;
   background-color: #ffffff;
   box-sizing: content-box;
-
-
-  &::after {
-    content: "";
-    width: 50vw;
-    border: 1px solid #68b738;
-    position: absolute;
-    top: 38px;
-    left: 245px;
-    z-index: 1;
-  }
+  max-width: 226px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -39,34 +72,12 @@
     margin: 0;
     padding: 68px 40px 80px;
     background-color: #ffffff;
-
-    &::after {
-      content: "";
-      width: 150vw;
-      height: 2px;
-      border: 1px solid #68b738;
-      position: absolute;
-      top: 91px;
-      left: -26vw;
-      z-index: -1;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-left: -40px;
     padding: 72px 40px 80px;
     background-color: #ffffff;
-
-    &::after {
-      content: "";
-      width: 300vw;
-      height: 2px;
-      border: 1px solid #68b738;
-      position: absolute;
-      top: 97px;
-      left: -40vw;
-      z-index: -1;
-    }
   }
 }
 
