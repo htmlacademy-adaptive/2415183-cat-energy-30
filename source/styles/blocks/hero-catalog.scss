@@ -10,16 +10,16 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin: 27px 20px 41px;
+  margin: 27px 0 41px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 60px 30px 168px;
+    margin: 62px 0 168px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 187px 110px 168px;
+    margin: 187px 0 168px;
   }
 }
 

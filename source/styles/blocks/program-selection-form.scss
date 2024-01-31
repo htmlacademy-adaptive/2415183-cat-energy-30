@@ -1,11 +1,3 @@
 .program-selection-form {
-  margin: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 110px;
-  }
+  margin: 0;
 }

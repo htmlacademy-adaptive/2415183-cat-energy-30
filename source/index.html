@@ -43,9 +43,12 @@
           <nav class="menu-nav menu-nav--closed menu-nav--no-js">
             <button class="menu-nav__toggle-close" type="button">
               <span class="visually-hidden">Закрыть меню.</span>
-              <svg width="23" height="23">
-                <use href="images\icons\stack.svg#nav-burger-close"></use>
-              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="logo-mobile">
+                <line id="line-15" y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
+                <line id="line-17" y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
+                </g>
+                </svg>
             </button>
             <ul class="menu-nav__list">
               <li class="menu-nav__list-item">
@@ -68,10 +71,9 @@
         </div>
       </div>
     </header>
-    <main class="main">
+    <main>
       <section class="hero">
-        <div class="container">
-          <div class="hero-wrapper">
+          <div class="hero__wrapper">
             <h1 class="hero__title title">Функциональное питание для котов</h1>
             <p class="hero__text">Занялся собой? Займись котом!</p>
             <div class="hero__picture-wrapper">
@@ -84,9 +86,8 @@
                 <img class="hero__product-image" src="images/index/index-can-mobile@1x.png" srcset="images/index/index-can-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy PRO с курицей">
               </picture>
             </div>
-            <a class="hero__selection-link link" href="#">Подобрать программу</a>
+            <a class="hero__selection-link link" href="form.html">Подобрать программу</a>
           </div>
-        </div>
       </section>
       <section class="program">
         <div class="container">
@@ -96,7 +97,7 @@
               <span class="program__item-slim-image"></span>
               <h3 class="program__title">Похудение</h3>
               <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="program__slim-link" href="#">Каталог slim
+              <a class="program__slim-link" href="catalog.html">Каталог slim
                 <span class="program__item-arrow program__item-arrow--slim">
                 </span>
               </a>
@@ -105,7 +106,7 @@
               <span class="program__item-pro-image"></span>
               <h3 class="program__title">Набор массы</h3>
               <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="program__pro-link" href="#">Каталог pro
+              <a class="program__pro-link" href="catalog.html">Каталог pro
                 <span class="program__item-arrow program__item-arrow--pro">
                 </span>
               </a>
@@ -137,7 +138,7 @@
               </li>
               <li class="advantages__item">
                 <div class="advantages__image-clock"></div>
-                <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего &nbsp;питомца!</p>
+                <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
               </li>
             </ul>
           </div>
@@ -146,21 +147,23 @@
       <section class="example">
         <div class="container">
           <div class="example__wrapper">
-            <h2 class="example__title title">Живой пример</h2>
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="example__info-wrapper">
-              <dl class="example__info">
-                <div class="example__card-wrapper">
-                  <dt class="example__info-subtitle">5 кг</dt>
-                  <dd class="example__info-text">снижение веса</dd>
+            <div class="example__description">
+              <h2 class="example__title title">Живой пример</h2>
+              <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <div class="example__info-wrapper">
+                <dl class="example__info">
+                  <div class="example__card-wrapper">
+                    <dt class="example__info-subtitle">5 кг</dt>
+                    <dd class="example__info-text">снижение веса</dd>
+                  </div>
+                  <div class="example__card-wrapper">
+                    <dt class="example__info-subtitle">60 дней</dt>
+                    <dd class="example__info-text">затрачено времени</dd>
+                  </div>
+                </dl>
+                <div class="example__cost-wrapper">
+                  <span class="example__cost">Затраты на питание:</span><span class="example__cost-price">15 000 РУБ.</span>
                 </div>
-                <div class="example__card-wrapper">
-                  <dt class="example__info-subtitle">60 дней</dt>
-                  <dd class="example__info-text">затрачено времени</dd>
-                </div>
-              </dl>
-              <div class="example__cost-wrapper">
-                <span class="example__cost">Затраты на питание:</span><span class="example__cost-price">15 000 РУБ.</span>
               </div>
             </div>
             <div class="example__slider">
@@ -197,13 +200,12 @@
             <h2 class="contacts__title">приглашаем<br>к сотрудничеству дилеров!</h2>
             <p class="contacts__text">ул. Большая <br>Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
           </div>
-          <div class="contacts__map-widget">
-            <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323253%2C59.938379&mode=whatshere&whatshere%5Bpoint%5D=30.323053%2C59.938535&whatshere%5Bzoom%5D=17&z=16" width="320" height="362" allowfullscreen style="position:relative;">
-            </iframe>
-          </div>
+        </div>
+        <div class="contacts__map-widget">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323253%2C59.938379&mode=whatshere&whatshere%5Bpoint%5D=30.323053%2C59.938535&whatshere%5Bzoom%5D=17&z=16" width="320" height="362" allowfullscreen style="position:relative;">
+          </iframe>
         </div>
       </section>
-    </main>
     </main>
     <footer class="footer">
       <div class="container">
@@ -251,7 +253,7 @@
               </svg>
             </a>
           </div>
-          <a class="footer__copyright" href="#">
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="footer__copyright-text">HTML Academy</span>
             <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0-83854-420)">
@@ -263,7 +265,7 @@
               </clippath>
               </defs>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </footer>

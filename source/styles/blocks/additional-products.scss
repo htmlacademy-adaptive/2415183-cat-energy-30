@@ -1,16 +1,12 @@
 .additional-products-wrapper {
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
+  padding: 0;
 
   @media (min-width: $desktop-width) {
-    padding: 0 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 54px;
+    padding: 0;
   }
 }
 
@@ -21,7 +17,7 @@
   font-weight: 400;
   position: relative;
   margin: 0;
-  padding: 23px 0 36px;
+  padding: 22px 0 36px;
 
 
   &::after {
@@ -54,7 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -30px;
+    margin-left: -40px;
     padding: 72px 40px 80px;
     background-color: #ffffff;
 
@@ -74,7 +70,13 @@
 .additional-products__advertising {
   width: 100%;
   min-height: 290px;
-  background-image: url("../../images/catalog/mobile-gift-background@1x.png");
+  background-image:
+    image-set(
+    url("../../images/catalog/mobile-gift-background@1x.webp") type("image/webp") 1x,
+    url("../../images/catalog/mobile-gift-background@2x.webp") type("image/webp") 2x,
+    url("../../images/catalog/mobile-gift-background@1x.png") type("image/png") 1x,
+    url("../../images/catalog/mobile-gift-background@2x.png") type("image/png") 2x
+    );
   background-size: 100% auto;
   padding-top: 186px;
   box-sizing: border-box;
@@ -96,7 +98,13 @@
   @media (min-width: $tablet-width) {
     width: 707px;
     min-height: 200px;
-    background-image: url("../../images/catalog/tablet-gift-background@1x.png");
+    background-image:
+      image-set(
+    url("../../images/catalog/tablet-gift-background@1x.webp") type("image/webp") 1x,
+    url("../../images/catalog/tablet-gift-background@2x.webp") type("image/webp") 2x,
+    url("../../images/catalog/tablet-gift-background@1x.png") type("image/png") 1x,
+    url("../../images/catalog/tablet-gift-background@2x.png") type("image/png") 2x
+    );
     background-size: 100% auto;
     padding-top: 186px;
     box-sizing: border-box;
@@ -119,7 +127,13 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 288px;
-    background-image: url("../../images/catalog/desktop-gift-background@1x.png");
+    background-image:
+      image-set(
+    url("../../images/catalog/desktop-gift-background@1x.webp") type("image/webp") 1x,
+    url("../../images/catalog/desktop-gift-background@2x.webp") type("image/webp") 2x,
+    url("../../images/catalog/desktop-gift-background@1x.png") type("image/png") 1x,
+    url("../../images/catalog/desktop-gift-background@2x.png") type("image/png") 2x
+    );
     background-size: 100% auto;
     background-repeat: no-repeat;
     padding-top: 186px;
@@ -127,7 +141,7 @@
     position: relative;
     margin-bottom: 3px;
     margin-top: 1px;
-    margin-right: 9px;
+    margin-right: 0;
 
     &::after {
       content: "";
