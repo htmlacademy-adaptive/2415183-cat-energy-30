@@ -2,24 +2,21 @@
   color: #444444;
   font-size: 14px;
   line-height: 18px;
-  max-width: 320px;
 }
 
 .program__wrapper {
-  margin: 0 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    max-width: 768px;
-    margin: 0 30px;
+    margin: 0;
     margin-top: -22px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     gap: 80px;
-    margin: 0 110px;
+    margin: 0;
   }
 }
 
@@ -101,7 +98,7 @@
   background-image: url("../../images/cat-pro.svg");
   position: absolute;
   left: 12px;
-  top: 37px;
+  top: 34px;
 
   @media (min-width: $tablet-width) {
     width: 268px;

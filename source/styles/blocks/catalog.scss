@@ -8,7 +8,6 @@
     grid-template-columns: 324px 324px;
     gap: 60px;
     row-gap: 141px;
-    margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +15,5 @@
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
     row-gap: 145px;
-    margin: 0 110px;
   }
 }
