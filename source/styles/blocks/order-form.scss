@@ -50,6 +50,7 @@
   display: flex;
   gap: 13px;
   justify-content: space-between;
+
 }
 
 .order-form__label {
@@ -111,8 +112,12 @@
   }
 }
 
-.order-form__input--error {
-  border: 1px solid #ff8282;
+.order-form__input--age{
+
+  @media (max-width: $mobile-width-only){
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 .order-form__input::-webkit-outer-spin-button,
@@ -123,6 +128,10 @@
 
 .order-form__input[type="number"] {
   appearance: textfield;
+}
+
+.order-form__input--error {
+  border: 1px solid #ff8282;
 }
 
 .order-form__program-type-list {
