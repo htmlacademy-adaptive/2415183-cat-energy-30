@@ -13,6 +13,8 @@
 }
 
 .order-form__cat-info-wrapper {
+
+
   @media (min-width: $tablet-width) {
     margin-right: 40px;
   }
@@ -41,7 +43,24 @@
 
   @media (min-width: $desktop-width) {
     gap: 19px;
-    min-width: 573px;
+    min-width: 570px;
+    margin: 0;
+  }
+}
+
+.order-form__parameters-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    gap: 19px;
+    margin-left: 40px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 0;
   }
 }
@@ -143,13 +162,16 @@
     display: flex;
     flex-direction: column;
     padding: 19px 25px;
-    margin-left: 40px;
+    margin-left: 80px;
+    margin-right: -40px;
     border: 1px solid #e7e7e7;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 26px 27px;
-    margin-left: 0;
+    padding: 27px 27px;
+    margin: 0;
+    width: 100%;
+    min-width: 458px;
   }
 }
 
@@ -253,7 +275,6 @@
       }
     }
 
-
   @media (min-width: $tablet-width) {
     padding-top: 72px;
     margin: 0;
@@ -263,7 +284,8 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0;
-    width: 570px;
+    position: relative;
+    left: -180px;
   }
 }
 
@@ -310,6 +332,16 @@
   @media (min-width: $desktop-width) {
     padding: 64px 0 70px;
     margin-left: -40px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      border: 2px solid #68b738;
+      position: absolute;
+      top: 83px;
+      left: 0;
+      z-index: -1;
+    }
   }
 }
 
@@ -336,17 +368,10 @@
     margin-left: -2px;
   }
 
-  @media (min-width: $desktop-width) {
-    &::after {
-      content: "";
-      width: 100%;
-      border: 2px solid #68b738;
-      position: absolute;
-      top: 18px;
-      left: -40vw;
-      z-index: -1;
-    }
+  @media (min-width: $desktop-width){
+    margin-left: -20px;
   }
+
 }
 
 .order-form__title--comment,
@@ -402,10 +427,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 13px;
+    gap: 14px;
     flex-grow: 1;
+    margin: 0;
   }
 }
+
+.order-form__owner-contacts-item--email{
+
+  @media (min-width: $desktop-width){
+    margin-left: 0px;
+  }
+}--tel
 
 .order-form__owner-contacts-item--email:focus-within label::after {
   content: "";
@@ -424,6 +457,7 @@
 .order-form__owner-contacts-item--tel {
   @media (min-width: $desktop-width) {
     margin-right: 0;
+    margin-left: 0px;
   }
 }
 
@@ -484,7 +518,7 @@
 
 .order-form__e-mail {
   @media (min-width: $desktop-width) {
-    min-width: 195px;
+    min-width: 242px;
   }
 }
 
