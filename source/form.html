@@ -29,7 +29,7 @@
                 <picture>
                   <source media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" type="image/svg+xml" width="118" height="21" >
                   <source media="(min-width: 768px)" srcset="images/logo-text-mobile-tablet.svg" type="image/svg+xml" width="101" height="18">
-                  <img class="logo__text " src="images/logo-text-mobile-tablet.svg" width="101" height="18" alt="Cat energy">
+                  <img class="logo__text " src="images/logo-text-mobile-tablet.svg" width="103" height="18" alt="Cat energy">
                 </picture>
               </a>
             </div>
@@ -85,8 +85,8 @@
       <section class="order-form">
           <form class="program-selection-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="order-form__cat-info-wrapper">
-              <div class="order-form__parameters">
-                <div class="container">
+              <div class="container">
+                  <div class="order-form__parameters">
                   <div class="order-form__parameters-item">
                     <label class="order-form__label" for="cat-name">Имя:*</label>
                     <input
@@ -111,7 +111,7 @@
                     />
                   </div>
                   <div class="order-form__parameters-item">
-                    <label class="order-form__label" for="cat-age">Возраст (лет):</label>
+                    <label class="order-form__label" for="cat-age">Возраст&nbsp;(лет):</label>
                     <input
                       class="order-form__input"
                       type="number"
@@ -152,7 +152,9 @@
               </div>
             </div>
             <div class="order-form__owner-contacts">
-              <h2 class="order-form__title title">Контактные данные (владельца кота)</h2>
+              <div class="container">
+                <h2 class="order-form__title title">Контактные данные (владельца кота)</h2>
+              </div>
               <div class="order-form__owner-contacts-items">
                 <div class="container">
                   <div class="order-form__owner-contacts-item order-form__owner-contacts-item--email">
@@ -183,14 +185,18 @@
               </div>
             </div>
             <div class="order-form__comment">
-              <h2 class="order-form__title order-form__title--comment title">Комментарий</h2>
-              <p class="visually-hidden">Расскажите обо всех повадках кота</p>
+              <div class="container">
+                <h2 class="order-form__title order-form__title--comment title">Комментарий</h2>
+                <p class="visually-hidden">Расскажите обо всех повадках кота</p>
+              </div>
               <div class="container">
                 <textarea class="order-form__comment-textarea" name="комментарий">Расскажите обо всех повадках кота</textarea>
               </div>
             </div>
             <div class="order-form__extra">
-              <h2 class="order-form__title order-form__title--extra title">Дополнительно</h2>
+              <div class="container">
+                <h2 class="order-form__title order-form__title--extra title">Дополнительно</h2>
+              </div>
               <div class="container">
                 <ul class="order-form__extra-list">
                   <li>
