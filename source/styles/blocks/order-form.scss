@@ -257,6 +257,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 72px;
     margin: 0;
+    margin-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -290,12 +291,20 @@
       left: 0;
       z-index: -1;
     }
-
-
   }
 
   @media (min-width: $tablet-width) {
     padding: 65px 0 62px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      border: 2px solid #68b738;
+      position: absolute;
+      top: 85px;
+      left: 0;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -324,16 +333,7 @@
     line-height: 36px;
     max-width: 600px;
     padding: 0 40px;
-
-    &::after {
-      content: "";
-      width: 100%;
-      border: 2px solid #68b738;
-      position: absolute;
-      top: 21px;
-      left: -26vw;
-      z-index: -1;
-    }
+    margin-left: -2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -351,18 +351,6 @@
 
 .order-form__title--comment,
 .order-form__title--extra {
-  @media (max-width: $mobile-width-only) {
-    &::after {
-      content: "";
-      width: 100%;
-      border: 1px solid #68b738;
-      position: absolute;
-      top: 16px;
-      right: 0;
-      // transform: translateX(100%);
-      z-index: -1;
-    }
-  }
 
   @media (min-width: $desktop-width) {
     max-width: 600px;
@@ -378,16 +366,6 @@
     background-color: #ffffff;
     display: inline-block;
     padding: 0 40px;
-
-    &::after {
-      content: "";
-      width: 300vw;
-      border: 2px solid #68b738;
-      position: absolute;
-      top: 18px;
-      left: -40vw;
-      z-index: -1;
-    }
   }
 }
 
@@ -420,6 +398,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 13px;
+    margin: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -617,6 +596,18 @@
       z-index: -1;
     }
   }
+
+  @media (min-width: $tablet-width){
+    &::after {
+      content: "";
+      width: 100%;
+      border: 2px solid #68b738;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      z-index: -1;
+    }
+  }
 }
 
 .order-form__comment-textarea {
@@ -642,9 +633,11 @@
     margin-top: 87px;
     margin-bottom: 65px;
     margin-left: 40px;
+    margin-right: 40px;
     font-size: 20px;
     line-height: 30px;
-    min-width: 628px;
+    min-width: 600px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -653,6 +646,12 @@
     margin-bottom: 61px;
     margin-left: 0;
     margin-top: 84px;
+  }
+}
+
+.order-form__comment-textarea-wrapper {
+  @media (min-width: $tablet-width){
+    margin-right: 80px;
   }
 }
 
@@ -666,6 +665,18 @@
       border: 1px solid #68b738;
       position: absolute;
       top: 16px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $tablet-width){
+    &::after {
+      content: "";
+      width: 100%;
+      border: 2px solid #68b738;
+      position: absolute;
+      top: 20px;
       left: 0;
       z-index: -1;
     }
