@@ -41,8 +41,7 @@ img {
   }
 }
 
-.container--catalog-item-wrapper{
-
+.container--catalog-item-wrapper {
   @media (min-width: $tablet-width) {
     max-width: 768px;
     padding: 0;
@@ -53,9 +52,10 @@ img {
     padding: 0;
   }
 }
-  .container--catalog-mobile{
-    @media (max-width: $mobile-width-only){
+
+.container--catalog-mobile {
+  @media (max-width: $mobile-width-only) {
     padding: 0;
     max-width: 100%;
-    }
+  }
 }
