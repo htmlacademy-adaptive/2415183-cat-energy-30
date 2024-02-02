@@ -6,6 +6,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/192.png" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="manifest" href="manifest.webmanifest">
     <title>CAT ENERGY</title>
@@ -33,7 +35,7 @@
             </div>
           </div>
           <div class="header__button-wrapper">
-            <button class="header__toggle-open" type="button">
+            <button class="header__toggle-open header__toggle-open--no-js" type="button">
               <span class="visually-hidden">Открыть меню.</span>
               <svg width="24" height="24">
                 <use href="images\icons\stack.svg#nav-burger"></use>
@@ -41,7 +43,7 @@
             </button>
           </div>
           <nav class="menu-nav menu-nav--closed menu-nav--no-js">
-            <button class="menu-nav__toggle-close" type="button">
+            <button class="menu-nav__toggle-close menu-nav__toggle-close--no-js" type="button">
               <span class="visually-hidden">Закрыть меню.</span>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="logo-mobile">

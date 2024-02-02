@@ -2,6 +2,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -15,5 +17,17 @@
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
     row-gap: 145px;
+  }
+}
+
+.catalog__list-item {
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      border-bottom: 1px solid #ebebeb;
+      margin: 0;
+    }
   }
 }

@@ -33,17 +33,6 @@
   gap: 10px;
   position: relative;
 
-  @media (max-width: $mobile-width-only) {
-    &::after {
-      content: "";
-      width: 100vw;
-      height: 1px;
-      border-top: 1px solid #d9d9d9;
-      margin: 0 -20px;
-      margin-top: 10px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     gap: 19px;
     margin-left: 40px;
@@ -52,7 +41,24 @@
 
   @media (min-width: $desktop-width) {
     gap: 19px;
-    min-width: 573px;
+    min-width: 570px;
+    margin: 0;
+  }
+}
+
+.order-form__parameters-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    gap: 19px;
+    margin-left: 40px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 0;
   }
 }
@@ -72,12 +78,6 @@
     line-height: 30px;
     margin: 0;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   font-size: 20px;
-  //   line-height: 30px;
-  //   margin: 0;
-  // }
 }
 
 .order-form__input:disabled ~ .order-form__label-text,
@@ -128,8 +128,11 @@
   }
 }
 
-.order-form__input--error {
-  border: 1px solid #ff8282;
+.order-form__input--age {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 .order-form__input::-webkit-outer-spin-button,
@@ -142,6 +145,10 @@
   appearance: textfield;
 }
 
+.order-form__input--error {
+  border: 1px solid #ff8282;
+}
+
 .order-form__program-type-list {
   list-style: none;
   margin: 0;
@@ -151,13 +158,16 @@
     display: flex;
     flex-direction: column;
     padding: 19px 25px;
-    margin-left: 40px;
+    margin-left: 80px;
+    margin-right: -40px;
     border: 1px solid #e7e7e7;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 26px 27px;
-    margin-left: 0;
+    padding: 27px 27px;
+    margin: 0;
+    width: 100%;
+    min-width: 458px;
   }
 }
 
@@ -238,29 +248,40 @@
 
 
 .order-form__program-type {
-  padding-top: 22px;
+  padding-top: 43px;
   position: relative;
 
   @media (max-width: $mobile-width-only) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid #d9d9d9;
+      top: 20px;
+    }
+
     &::after {
       position: absolute;
       content: "";
-      width: 100vw;
+      width: 100%;
       height: 1px;
       border-top: 1px solid #d9d9d9;
-      margin: 19px -20px;
+      bottom: -19px;
     }
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 72px;
     margin: 0;
+    margin-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0;
-    width: 570px;
+    position: relative;
+    left: -180px;
   }
 }
 
@@ -276,14 +297,47 @@
 
 .order-form__owner-contacts {
   padding: 45px 0 19px;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      width: 100%;
+      border: 1px solid #68b738;
+      position: absolute;
+      top: 61px;
+      right: 0;
+      z-index: -1;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 65px 0 62px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      border: 2px solid #68b738;
+      position: absolute;
+      top: 85px;
+      left: 0;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 64px 0 70px;
     margin-left: -40px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      border: 2px solid #68b738;
+      position: absolute;
+      top: 83px;
+      left: 0;
+      z-index: -1;
+    }
   }
 }
 
@@ -296,50 +350,22 @@
   text-transform: none;
   align-self: center;
   margin: 0;
-  padding-right: 18px;
+  margin-left: -20px;
+  padding: 0 20px;
   position: relative;
   background-color: #ffffff;
   display: inline-block;
-
-  @media (max-width: $mobile-width-only) {
-    &::after {
-      content: "";
-      width: 100vw;
-      border: 1px solid #68b738;
-      position: absolute;
-      top: 16px;
-      left: 17px;
-      z-index: -1;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     max-width: 600px;
     padding: 0 40px;
-
-    &::after {
-      content: "";
-      width: 768px;
-      border: 2px solid #68b738;
-      position: absolute;
-      top: 21px;
-      left: -30px;
-      z-index: -1;
-    }
+    margin-left: -2px;
   }
 
   @media (min-width: $desktop-width) {
-    &::after {
-      content: "";
-      width: 1440px;
-      border: 2px solid #68b738;
-      position: absolute;
-      top: 18px;
-      left: -70px;
-      z-index: -1;
-    }
+    margin-left: -20px;
   }
 }
 
@@ -359,29 +385,17 @@
     background-color: #ffffff;
     display: inline-block;
     padding: 0 40px;
-
-    &::after {
-      content: "";
-      width: 1440px;
-      border: 2px solid #68b738;
-      position: absolute;
-      top: 18px;
-      left: -70px;
-      z-index: -1;
-    }
   }
 }
 
-.order-form__owner-contacts-items {
+.order-form__owner-contacts-items .container {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin-top: 31px;
+  gap: 9px;
+  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
     margin-top: 75px;
-    margin-left: 40px;
-    margin-right: 40px;
     gap: 15px;
   }
 
@@ -403,11 +417,19 @@
 
   @media (min-width: $tablet-width) {
     gap: 13px;
+    margin: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 13px;
+    gap: 14px;
     flex-grow: 1;
+    margin: 0;
+  }
+}
+
+.order-form__owner-contacts-item--email {
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -428,6 +450,7 @@
 .order-form__owner-contacts-item--tel {
   @media (min-width: $desktop-width) {
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -453,9 +476,9 @@
   font-family: "Oswald", sans-serif;
   color: #444444;
   border: 1px solid #e7e7e7;
-  padding-left: 15px;
-  padding-top: 14px;
-  padding-bottom: 13px;
+  padding-left: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   position: relative;
 
   &:hover {
@@ -463,7 +486,7 @@
   }
 
   &:focus {
-    border: 2px solid #444444;
+    border: 1px solid #444444;
   }
 
   &:invalid {
@@ -483,12 +506,12 @@
 
 .order-form__e-mail--error,
 .order-form__tel--error {
-  border: 2px solid #ff8282;
+  border: 1px solid #ff8282;
 }
 
 .order-form__e-mail {
   @media (min-width: $desktop-width) {
-    min-width: 195px;
+    min-width: 242px;
   }
 }
 
@@ -586,6 +609,34 @@
   }
 }
 
+.order-form__comment {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      width: 100%;
+      border: 1px solid #68b738;
+      position: absolute;
+      top: 16px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      width: 100%;
+      border: 2px solid #68b738;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+
 .order-form__comment-textarea {
   display: block;
   margin: 0;
@@ -600,7 +651,7 @@
   font-family: "Oswald", sans-serif;
   color: #444444;
   border: 1px solid #e7e7e7;
-  width: 300px;
+  width: 100%;
   resize: none;
 
   @media (min-width: $tablet-width) {
@@ -609,9 +660,11 @@
     margin-top: 87px;
     margin-bottom: 65px;
     margin-left: 40px;
+    margin-right: 40px;
     font-size: 20px;
     line-height: 30px;
-    min-width: 628px;
+    min-width: 600px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -622,6 +675,41 @@
     margin-top: 84px;
   }
 }
+
+.order-form__comment-textarea-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-right: 80px;
+  }
+}
+
+.order-form__extra {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      width: 100%;
+      border: 1px solid #68b738;
+      position: absolute;
+      top: 16px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      width: 100%;
+      border: 2px solid #68b738;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+
 
 .order-form__extra-list {
   list-style: none;
@@ -711,7 +799,7 @@
 }
 
 .order-form__submit {
-  background-color: $green-basic;
+  background-color: #68b738;
   color: #ffffff;
   display: block;
   width: 100%;
@@ -776,4 +864,3 @@
     gap: 12px;
   }
 }
-

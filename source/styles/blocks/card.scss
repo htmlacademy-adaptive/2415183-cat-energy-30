@@ -8,21 +8,9 @@
     "link link";
   padding-top: 20px;
   padding-bottom: 46px;
-  box-sizing: border-box;
+  box-sizing: content-box;
   position: relative;
-  margin: 0;
-
-  @media (max-width: $mobile-width-only) {
-    &::after {
-      display: block;
-      content: "";
-      width: calc(100% + 40px);
-      border-bottom: 1px solid #ebebeb;
-      position: absolute;
-      bottom: 0;
-      margin: 0 -20px;
-    }
-  }
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -31,7 +19,6 @@
     background-color: #f2f2f2;
     margin: 0;
     padding: 40px 37px;
-    min-height: 430px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +46,7 @@
     text-align: center;
     margin: 0;
     margin-bottom: 12px;
-    margin-top: 121px;
+    margin-top: 123px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,7 +67,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -53px;
+    top: -51px;
     width: 163px;
     height: 173px;
   }
@@ -89,7 +76,7 @@
 .card__img-wrapper--big {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -69px;
+    top: -66px;
     width: 168px;
     height: 203px;
   }
@@ -155,7 +142,7 @@
   margin-top: 21px;
   display: flex;
   justify-content: center;
-  background-color: $green-basic;
+  background-color: #68b738;
 
   @media (min-width: $tablet-width) {
     margin-top: 31px;
@@ -170,14 +157,13 @@
   position: relative;
   padding: 25px 0;
   margin: 0;
-  border-bottom: 1px solid #ebebeb;
   display: block;
 
   @media (min-width: $tablet-width) {
     width: 324px;
     min-height: 428px;
     padding: 0;
-    border: 2px solid #f2f2f2;
+    border: 1px solid #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
@@ -213,8 +199,8 @@
       height: 60px;
       background-size: 60px 60px;
       background-repeat: no-repeat;
-      top: -110px; //толще, чем надо
-      left: 69px;
+      top: -107px;
+      left: 70px;
     }
 
     @media (min-width: $desktop-width) {
@@ -227,7 +213,7 @@
     font-size: 20px;
     line-height: 24px;
     width: 134px;
-    margin: 158px 92px 22px;
+    margin: 160px 92px 22px;
   }
 
   @media (min-width: $desktop-width) {

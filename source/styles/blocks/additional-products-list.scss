@@ -14,18 +14,22 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 25px 37px 27px;
+    padding: 26px 37px 27px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #cdcdcd;
+
+    &:not(:last-of-type) {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 895px;
-    padding: 14px 0 17px;
+    padding: 15px 0 16px;
     border: none;
     border-top: 1px solid #cdcdcd;
   }
@@ -105,7 +109,7 @@
 .additional-products-list__button {
   display: flex;
   justify-content: center;
-  background-color: $green-basic;
+  background-color: #68b738;
 
   @media (min-width: $tablet-width) {
     width: 632px;
