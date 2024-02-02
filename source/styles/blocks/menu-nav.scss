@@ -62,6 +62,11 @@
   stroke: #b3b3b3;
 }
 
+.menu-nav__toggle-close--no-js,
+.header__toggle-open--no-js {
+  display: none;
+}
+
 .menu-nav__list {
   list-style: none;
   font-family: "Oswald", sans-serif;

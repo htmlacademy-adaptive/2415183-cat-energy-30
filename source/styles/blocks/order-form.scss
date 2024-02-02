@@ -302,7 +302,7 @@
   @media (max-width: $mobile-width-only) {
     &::after {
       content: "";
-      width: 50%;
+      width: 100%;
       border: 1px solid #68b738;
       position: absolute;
       top: 61px;
@@ -615,7 +615,7 @@
   @media (max-width: $mobile-width-only) {
     &::after {
       content: "";
-      width: 50%;
+      width: 100%;
       border: 1px solid #68b738;
       position: absolute;
       top: 16px;
@@ -688,7 +688,7 @@
   @media (max-width: $mobile-width-only) {
     &::after {
       content: "";
-      width: 50%;
+      width: 100%;
       border: 1px solid #68b738;
       position: absolute;
       top: 16px;
@@ -864,4 +864,3 @@
     gap: 12px;
   }
 }
-
