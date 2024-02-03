@@ -57,6 +57,7 @@
     display: flex;
     gap: 95px;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -117,6 +118,7 @@
       position: absolute;
       left: 115px;
       top: -40px;
+      z-index: -1;
     }
 
     &::after {
@@ -166,6 +168,7 @@
       position: absolute;
       left: 110px;
       top: -40px;
+      z-index: -1;
     }
 
     &::after {
@@ -214,6 +217,7 @@
       position: absolute;
       left: 115px;
       top: -39px;
+      z-index: -1;
     }
 
     &::after {
@@ -262,6 +266,7 @@
       position: absolute;
       left: 115px;
       top: -39px;
+      z-index: -1;
     }
 
     &::after {
@@ -278,13 +283,15 @@
 
 .advantages__text {
   margin: 0;
-  position: absolute;
-  left: 80px;
+  padding: 0;
+  margin-left: 0;
+  max-width: 200px;
 
   @media (min-width: $tablet-width) {
     left: 0;
     font-size: 16px;
     line-height: 24px;
-    width: 242px;
+    min-width: 250px;
+    max-width: 100%;
   }
 }

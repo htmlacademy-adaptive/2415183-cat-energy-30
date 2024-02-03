@@ -105,7 +105,7 @@
     margin: 0;
     margin-left: 190px;
     margin-top: 40px;
-    margin-bottom: 372px;
+    margin-bottom: 51px;
   }
 }
 
@@ -123,11 +123,10 @@
 
   @media (min-width: $tablet-width) {
     width: 244px;
-    margin: 0;
+    margin-top: 50px;
+    margin-left: 119px;
+    margin-bottom: 527px;
     padding: 14px 26px;
-    position: absolute;
-    top: 291px;
-    left: 120px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -135,18 +134,25 @@
   @media (min-width: $desktop-width) {
     width: 244px;
     margin: 0;
+    margin-left: 190px;
+    margin-bottom: 265px;
     padding: 14px 26px;
-    position: absolute;
-    top: 456px;
-    left: 190px;
   }
 }
 
 .hero__picture-wrapper {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 262px;
+    left: 29px;
+    z-index: -1;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 65px;
     left: 557px;
+    z-index: 1;
   }
 }
 
