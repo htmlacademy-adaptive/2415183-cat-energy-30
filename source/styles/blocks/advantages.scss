@@ -55,9 +55,10 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    gap: 95px;
+    gap: 90px;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
